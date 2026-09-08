@@ -434,3 +434,15 @@ button:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
+
+.resume-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.resume-sep {
+  color: var(--muted, #a1a1aa);
+  user-select: none;
+}
