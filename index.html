@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Daniel Tam — CS + Economics student at UMD. Mobile (SwiftUI) and backend (Python/FastAPI) portfolio." />
-  <meta name="theme-color" content="#0a0f0f" />
+  <meta name="theme-color" content="#0A0A0A" />
   <title>Daniel Tam | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -41,27 +41,18 @@
 
   <main id="main">
     <section class="hero section" id="hero" aria-labelledby="hero-heading">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">College Park, MD · Expected Dec 2027</p>
-          <h1 id="hero-heading">Daniel Tam</h1>
-          <p class="hero-lede">
-            CS + Economics @ UMD (Cybersecurity track). Focus: mobile
-            <strong>SwiftUI</strong> + backend <strong>Python/FastAPI</strong>. GPA 3.50.
-          </p>
-          <div class="hero-ctas">
-            <a class="btn btn-primary" href="assets/resume.pdf">Resume</a>
-            <a class="btn btn-ghost" href="https://github.com/dtam27" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a class="btn btn-ghost" href="https://linkedin.com/in/dtam27" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </div>
-        </div>
-        <div class="hero-aside" aria-hidden="true">
-          <div class="hero-card">
-            <p class="hero-card-label">Currently</p>
-            <p class="hero-card-title">Group Think</p>
-            <p class="hero-card-meta">SwiftUI · Firebase · Collaborative screen-time</p>
-          </div>
-        </div>
+      <div class="container">
+        <p class="eyebrow">College Park, MD · Expected Dec 2027</p>
+        <h1 id="hero-heading">Daniel Tam</h1>
+        <p class="hero-lede">
+          CS + Economics @ UMD (Cybersecurity track). Focus: mobile
+          <strong>SwiftUI</strong> + backend <strong>Python/FastAPI</strong>. GPA 3.50.
+        </p>
+        <nav class="hero-links" aria-label="Quick links">
+          <a href="assets/resume.pdf">Resume</a>
+          <a href="https://github.com/dtam27" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/dtam27" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
       </div>
     </section>
 
@@ -113,32 +104,39 @@
       </div>
     </section>
 
-    <section class="section section-alt" id="skills" aria-labelledby="skills-heading">
+    <section class="section" id="skills" aria-labelledby="skills-heading">
       <div class="container">
         <h2 id="skills-heading">Skills</h2>
         <div class="skills-grid">
-          <div class="skill-card">
+          <div class="skill-group">
             <h3>Languages</h3>
-            <ul class="tag-list">
+            <ul class="skill-list">
               <li>Python</li>
-              <li>Swift</li>
+              <li>Java</li>
               <li>JavaScript</li>
-              <li>HTML/CSS</li>
-              <li>SQL</li>
+              <li>Swift / SwiftUI</li>
               <li>C</li>
+              <li>Rust</li>
+              <li>HTML / CSS</li>
+              <li>SQL</li>
+              <li>R</li>
+              <li>Assembly</li>
+              <li>OCaml</li>
+              <li>Haskell</li>
+              <li>Dafny</li>
             </ul>
           </div>
-          <div class="skill-card">
+          <div class="skill-group">
             <h3>Mobile &amp; frontend</h3>
-            <ul class="tag-list">
+            <ul class="skill-list">
               <li>SwiftUI</li>
               <li>Xcode</li>
               <li>Responsive web</li>
             </ul>
           </div>
-          <div class="skill-card">
+          <div class="skill-group">
             <h3>Backend &amp; data</h3>
-            <ul class="tag-list">
+            <ul class="skill-list">
               <li>FastAPI</li>
               <li>SQLite</li>
               <li>SQLAlchemy</li>
@@ -146,9 +144,9 @@
               <li>Firebase</li>
             </ul>
           </div>
-          <div class="skill-card">
+          <div class="skill-group">
             <h3>Security &amp; auth</h3>
-            <ul class="tag-list">
+            <ul class="skill-list">
               <li>OAuth2</li>
               <li>JWT</li>
               <li>RBAC</li>
@@ -156,12 +154,14 @@
               <li>Cryptography</li>
             </ul>
           </div>
-          <div class="skill-card">
+          <div class="skill-group">
             <h3>Tools</h3>
-            <ul class="tag-list">
+            <ul class="skill-list">
               <li>Git / GitHub</li>
               <li>Discord API</li>
               <li>Unix / Linux</li>
+              <li>VMware</li>
+              <li>Microsoft Office Suite</li>
             </ul>
           </div>
         </div>
@@ -171,18 +171,18 @@
     <section class="section" id="projects" aria-labelledby="projects-heading">
       <div class="container">
         <h2 id="projects-heading">Projects</h2>
-        <div class="projects-grid">
+        <div class="projects-list">
           <article class="project-card">
             <div class="project-meta">
               <time datetime="2026-06">Jun 2026–Present</time>
-              <span class="pill">iOS</span>
+              <span class="meta-label">iOS</span>
             </div>
             <h3>Group Think</h3>
             <p>
               Collaborative screen-time iOS app built with SwiftUI/Xcode. Firebase
               authentication and realtime sync. Built with 1 collaborator.
             </p>
-            <ul class="tag-list tag-list-sm">
+            <ul class="tag-list">
               <li>SwiftUI</li>
               <li>Xcode</li>
               <li>Firebase Auth</li>
@@ -193,14 +193,14 @@
           <article class="project-card">
             <div class="project-meta">
               <time datetime="2026-01">Jan–May 2026</time>
-              <span class="pill">Backend</span>
+              <span class="meta-label">Backend</span>
             </div>
             <h3>Discord Bot Development</h3>
             <p>
               Python bot platform with SQLite, SQLAlchemy, Alembic, and FastAPI.
               ~19k / 700 / 11 servers with 1000+ users. OAuth2/JWT, RBAC, and anti-nuke protections.
             </p>
-            <ul class="tag-list tag-list-sm">
+            <ul class="tag-list">
               <li>Python</li>
               <li>FastAPI</li>
               <li>SQLite</li>
@@ -214,14 +214,14 @@
           <article class="project-card">
             <div class="project-meta">
               <time datetime="2022-01">Jan 2022–Mar 2023</time>
-              <span class="pill">Web</span>
+              <span class="meta-label">Web</span>
             </div>
             <h3>Touch by Touch Fencing</h3>
             <p>
               JavaScript/HTML web and mobile experience supporting fencing programs
               across 135+ schools.
             </p>
-            <ul class="tag-list tag-list-sm">
+            <ul class="tag-list">
               <li>JavaScript</li>
               <li>HTML</li>
               <li>Mobile-friendly web</li>
@@ -231,7 +231,7 @@
       </div>
     </section>
 
-    <section class="section section-alt" id="contact" aria-labelledby="contact-heading">
+    <section class="section" id="contact" aria-labelledby="contact-heading">
       <div class="container contact-block">
         <h2 id="contact-heading">Contact</h2>
         <p class="lede">Open to internships, collaborations, and conversations about mobile + backend work.</p>
@@ -255,7 +255,6 @@
           <li>
             <span class="contact-label">Resume</span>
             <a href="assets/resume.pdf">assets/resume.pdf</a>
-            <span class="muted"> (drop your PDF in <code>assets/</code>)</span>
           </li>
         </ul>
       </div>
