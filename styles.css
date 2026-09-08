@@ -446,3 +446,16 @@ button:focus-visible {
   color: var(--muted, #a1a1aa);
   user-select: none;
 }
+
+.resume-row {
+  scroll-margin-top: 5rem;
+  border-radius: 4px;
+  transition: background-color 150ms ease-in-out, outline-color 150ms ease-in-out;
+  outline: 1px solid transparent;
+  outline-offset: 6px;
+}
+
+.resume-row.is-highlighted {
+  background-color: rgba(139, 154, 125, 0.1);
+  outline-color: #8b9a7d;
+}

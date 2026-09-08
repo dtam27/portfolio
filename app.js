@@ -55,3 +55,30 @@
     sections.forEach((section) => observer.observe(section));
   }
 })();
+
+
+/* resume highlight */
+(() => {
+  const row = document.getElementById("resume");
+  if (!row) return;
+
+  const highlight = () => {
+    row.classList.add("is-highlighted");
+    row.focus({ preventScroll: true });
+    window.setTimeout(() => row.classList.remove("is-highlighted"), 1600);
+  };
+
+  if (window.location.hash === "#resume") {
+    highlight();
+  }
+
+  document.querySelectorAll('a[href="#resume"]').forEach((link) => {
+    link.addEventListener("click", () => {
+      window.setTimeout(highlight, 50);
+    });
+  });
+
+  window.addEventListener("hashchange", () => {
+    if (window.location.hash === "#resume") highlight();
+  });
+})();
