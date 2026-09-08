@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Daniel Tam — CS + Economics student at UMD. Mobile (SwiftUI) and backend (Python/FastAPI) portfolio." />
   <meta name="theme-color" content="#0A0A0A" />
+  <meta property="og:title" content="Daniel Tam — Portfolio" />
+  <meta property="og:description" content="Mobile and backend builder. CS + Economics @ UMD (Cybersecurity track)." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dtam27.github.io/portfolio/" />
   <title>Daniel Tam | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,17 +18,10 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a class="logo" href="#top" aria-label="Daniel Tam — home">DT</a>
-      <button
-        class="nav-toggle"
-        type="button"
-        aria-expanded="false"
-        aria-controls="site-nav"
-        aria-label="Open menu"
-      >
-        <span class="nav-toggle-bar" aria-hidden="true"></span>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="#top">Daniel Tam</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
         <span class="nav-toggle-bar" aria-hidden="true"></span>
         <span class="nav-toggle-bar" aria-hidden="true"></span>
       </button>
@@ -40,26 +37,26 @@
   </header>
 
   <main id="main">
-    <section class="hero section" id="hero" aria-labelledby="hero-heading">
-      <div class="container">
-        <p class="eyebrow">College Park, MD · Expected Dec 2027</p>
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap">
+        <p class="eyebrow"><span class="mono">College Park, MD</span> · Expected Dec 2027</p>
         <h1 id="hero-heading">Daniel Tam</h1>
         <p class="hero-lede">
           CS + Economics @ UMD (Cybersecurity track). Focus: mobile
           <strong>SwiftUI</strong> + backend <strong>Python/FastAPI</strong>. GPA 3.50.
         </p>
-        <nav class="hero-links" aria-label="Quick links">
+        <p class="hero-links">
           <a href="assets/resume.pdf">Resume</a>
           <a href="https://github.com/dtam27" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://linkedin.com/in/dtam27" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </nav>
+        </p>
       </div>
     </section>
 
     <section class="section" id="about" aria-labelledby="about-heading">
-      <div class="container">
+      <div class="wrap">
         <h2 id="about-heading">About</h2>
-        <div class="about-grid">
+        <div class="about-layout">
           <div class="about-main">
             <p>
               I’m a dual-degree student at the University of Maryland pursuing a
@@ -86,7 +83,7 @@
           </div>
           <aside class="about-side">
             <h3>Experience &amp; leadership</h3>
-            <ul class="compact-list">
+            <ul class="plain-list">
               <li>Recruitment Ambassador, CMNS</li>
               <li>President, Asian American InterVarsity (120 members)</li>
               <li>Founder, CS Base UMD</li>
@@ -94,7 +91,7 @@
               <li>Developer, Touch by Touch</li>
             </ul>
             <h3>Certifications &amp; awards</h3>
-            <ul class="compact-list">
+            <ul class="plain-list">
               <li>GCLD</li>
               <li>GFACT</li>
               <li>Eagle Scout, 2021</li>
@@ -105,38 +102,31 @@
     </section>
 
     <section class="section" id="skills" aria-labelledby="skills-heading">
-      <div class="container">
+      <div class="wrap">
         <h2 id="skills-heading">Skills</h2>
         <div class="skills-grid">
           <div class="skill-group">
-            <h3>Languages</h3>
-            <ul class="skill-list">
+            <h3 class="mono">Languages</h3>
+            <ul>
               <li>Python</li>
-              <li>Java</li>
+              <li>Swift</li>
               <li>JavaScript</li>
-              <li>Swift / SwiftUI</li>
-              <li>C</li>
-              <li>Rust</li>
-              <li>HTML / CSS</li>
+              <li>HTML/CSS</li>
               <li>SQL</li>
-              <li>R</li>
-              <li>Assembly</li>
-              <li>OCaml</li>
-              <li>Haskell</li>
-              <li>Dafny</li>
+              <li>C</li>
             </ul>
           </div>
           <div class="skill-group">
-            <h3>Mobile &amp; frontend</h3>
-            <ul class="skill-list">
+            <h3 class="mono">Mobile &amp; frontend</h3>
+            <ul>
               <li>SwiftUI</li>
               <li>Xcode</li>
               <li>Responsive web</li>
             </ul>
           </div>
           <div class="skill-group">
-            <h3>Backend &amp; data</h3>
-            <ul class="skill-list">
+            <h3 class="mono">Backend &amp; data</h3>
+            <ul>
               <li>FastAPI</li>
               <li>SQLite</li>
               <li>SQLAlchemy</li>
@@ -145,8 +135,8 @@
             </ul>
           </div>
           <div class="skill-group">
-            <h3>Security &amp; auth</h3>
-            <ul class="skill-list">
+            <h3 class="mono">Security &amp; auth</h3>
+            <ul>
               <li>OAuth2</li>
               <li>JWT</li>
               <li>RBAC</li>
@@ -155,13 +145,11 @@
             </ul>
           </div>
           <div class="skill-group">
-            <h3>Tools</h3>
-            <ul class="skill-list">
+            <h3 class="mono">Tools</h3>
+            <ul>
               <li>Git / GitHub</li>
               <li>Discord API</li>
               <li>Unix / Linux</li>
-              <li>VMware</li>
-              <li>Microsoft Office Suite</li>
             </ul>
           </div>
         </div>
@@ -169,102 +157,84 @@
     </section>
 
     <section class="section" id="projects" aria-labelledby="projects-heading">
-      <div class="container">
+      <div class="wrap">
         <h2 id="projects-heading">Projects</h2>
         <div class="projects-list">
-          <article class="project-card">
-            <div class="project-meta">
-              <time datetime="2026-06">Jun 2026–Present</time>
-              <span class="meta-label">iOS</span>
+          <article class="project">
+            <div class="project-top">
+              <h3>Group Think</h3>
+              <p class="project-meta mono">Jun 2026–Present · iOS</p>
             </div>
-            <h3>Group Think</h3>
             <p>
               Collaborative screen-time iOS app built with SwiftUI/Xcode. Firebase
               authentication and realtime sync. Built with 1 collaborator.
             </p>
-            <ul class="tag-list">
-              <li>SwiftUI</li>
-              <li>Xcode</li>
-              <li>Firebase Auth</li>
-              <li>Realtime</li>
-            </ul>
+            <p class="stack mono">SwiftUI · Xcode · Firebase Auth · Realtime</p>
           </article>
 
-          <article class="project-card">
-            <div class="project-meta">
-              <time datetime="2026-01">Jan–May 2026</time>
-              <span class="meta-label">Backend</span>
+          <article class="project">
+            <div class="project-top">
+              <h3>Discord Bot Development</h3>
+              <p class="project-meta mono">Jan–May 2026 · Backend</p>
             </div>
-            <h3>Discord Bot Development</h3>
             <p>
               Python bot platform with SQLite, SQLAlchemy, Alembic, and FastAPI.
               ~19k / 700 / 11 servers with 1000+ users. OAuth2/JWT, RBAC, and anti-nuke protections.
             </p>
-            <ul class="tag-list">
-              <li>Python</li>
-              <li>FastAPI</li>
-              <li>SQLite</li>
-              <li>SQLAlchemy</li>
-              <li>Alembic</li>
-              <li>OAuth2/JWT</li>
-              <li>RBAC</li>
-            </ul>
+            <p class="stack mono">Python · FastAPI · SQLite · SQLAlchemy · Alembic · OAuth2/JWT · RBAC</p>
           </article>
 
-          <article class="project-card">
-            <div class="project-meta">
-              <time datetime="2022-01">Jan 2022–Mar 2023</time>
-              <span class="meta-label">Web</span>
+          <article class="project">
+            <div class="project-top">
+              <h3>Touch by Touch Fencing</h3>
+              <p class="project-meta mono">Jan 2022–Mar 2023 · Web</p>
             </div>
-            <h3>Touch by Touch Fencing</h3>
             <p>
               JavaScript/HTML web and mobile experience supporting fencing programs
               across 135+ schools.
             </p>
-            <ul class="tag-list">
-              <li>JavaScript</li>
-              <li>HTML</li>
-              <li>Mobile-friendly web</li>
-            </ul>
+            <p class="stack mono">JavaScript · HTML · Mobile-friendly web</p>
           </article>
         </div>
       </div>
     </section>
 
     <section class="section" id="contact" aria-labelledby="contact-heading">
-      <div class="container contact-block">
+      <div class="wrap">
         <h2 id="contact-heading">Contact</h2>
-        <p class="lede">Open to internships, collaborations, and conversations about mobile + backend work.</p>
-        <ul class="contact-list">
-          <li>
-            <span class="contact-label">Email</span>
-            <a href="mailto:dtam1@terpmail.umd.edu">dtam1@terpmail.umd.edu</a>
-          </li>
-          <li>
-            <span class="contact-label">Phone</span>
-            <a href="tel:+19082802802">908-280-2802</a>
-          </li>
-          <li>
-            <span class="contact-label">LinkedIn</span>
-            <a href="https://linkedin.com/in/dtam27" target="_blank" rel="noopener noreferrer">linkedin.com/in/dtam27</a>
-          </li>
-          <li>
-            <span class="contact-label">GitHub</span>
-            <a href="https://github.com/dtam27" target="_blank" rel="noopener noreferrer">github.com/dtam27</a>
-          </li>
-          <li>
-            <span class="contact-label">Resume</span>
-            <a href="assets/resume.pdf">assets/resume.pdf</a>
-          </li>
-        </ul>
+        <p class="muted contact-intro">
+          Open to internships, collaborations, and conversations about mobile + backend work.
+        </p>
+        <dl class="contact-list">
+          <div>
+            <dt>Email</dt>
+            <dd><a href="mailto:dtam1@terpmail.umd.edu">dtam1@terpmail.umd.edu</a></dd>
+          </div>
+          <div>
+            <dt>Phone</dt>
+            <dd><a href="tel:+19082802802">908-280-2802</a></dd>
+          </div>
+          <div>
+            <dt>LinkedIn</dt>
+            <dd><a href="https://linkedin.com/in/dtam27" target="_blank" rel="noopener noreferrer">linkedin.com/in/dtam27</a></dd>
+          </div>
+          <div>
+            <dt>GitHub</dt>
+            <dd><a href="https://github.com/dtam27" target="_blank" rel="noopener noreferrer">github.com/dtam27</a></dd>
+          </div>
+          <div>
+            <dt>Resume</dt>
+            <dd><a href="assets/resume.pdf">assets/resume.pdf</a></dd>
+          </div>
+        </dl>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Daniel Tam · College Park, MD</p>
-      <a class="back-top" href="#top">Back to top</a>
+    <div class="wrap footer-inner">
+      <p class="muted">© <span id="year"></span> Daniel Tam · College Park, MD</p>
+      <a class="text-link" href="#top">Back to top</a>
     </div>
   </footer>
 
