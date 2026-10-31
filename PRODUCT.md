@@ -48,7 +48,8 @@ Use direct headings and plain language. The hero identifies Daniel by name; Abou
 - The user chose the full phone screenshot after discussing a crop. Use `assets/projects/group-think-app-limit.png` in full beside the study hall capture, captioned as the iOS app limit screen.
 - Two user-supplied Touch by Touch screenshots are published as `assets/projects/touch-by-touch-scoring.png` and `assets/projects/touch-by-touch-school-stats.png`. These are the selected scoring and school statistics views; the gallery uses these two images.
 - Source evidence supports the per-server permission configuration and Firestore profile-listener descriptions. Public documentation should summarize those technical details without publishing private conversation identifiers, local project paths, or raw history.
-- No product recordings, portrait, testimonials, or independently verified active usage measurements are currently included in the repository.
+- Daniel's supplied portrait appears beside the About introduction as `assets/headshot.png`. The user approved precise background masking; the published asset preserves all visible original RGB pixels and changes only transparency. The original wall background and discarded generated variants are not published.
+- No product recordings, testimonials, or independently verified active usage measurements are currently included in the repository.
 - `docs/content-guide.md` records received material, remaining useful evidence, and a reusable project intake template.
 
 ## Product Principles

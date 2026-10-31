@@ -17,6 +17,7 @@ The target is software engineering internships. The latest PDF résumé, actual 
 - GroupThink's stale session-total explanation and work on a live Firestore profile listener with cleanup. The source supports describing that work; a verified runtime fix or measured improvement has not been established.
 - All five experience rows with full organization names and dates, the expanded Bachelor of Science degree names, grade point average, First-Year Innovation & Research Experience program, and GIAC issuer name.
 - Preference for direct headings and plain copy, replacing the earlier slogans.
+- Daniel's headshot, displayed in About with a precise foreground mask that preserves the original photo pixels.
 
 The site links directly to the supplied PDF résumé. The older DOCX is retained as a legacy file and is not offered as an equivalent download.
 
@@ -26,7 +27,7 @@ The site links directly to the supplied PDF résumé. The older DOCX is retained
 2. **Decision tradeoffs.** An alternative considered for the shared permission manager or profile listener, and why the chosen approach fit the project. Add details only when they reflect Daniel's own decisions.
 3. **Demo and release URLs.** A live site, TestFlight invitation, app listing, or short demo recording that can be public. Private code can be described without publishing it.
 4. **Measurement definitions.** How community, user, and school counts were obtained, the period they cover, and any actual usage measurements. Include monitoring evidence before using an uptime percentage.
-5. **Recruiting details.** The internship season and roles of interest. A clear portrait is optional.
+5. **Recruiting details.** The internship season and roles of interest.
 
 ## Project intake template
 

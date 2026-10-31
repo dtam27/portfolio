@@ -379,6 +379,11 @@
         "name": "Optional motion",
         "body": "Content is visible at rest. Reduced motion disables transitions and smooth scrolling; interaction states remain legible without animation. The shared easing is `cubic-bezier(.32,.72,0,1)`.",
         "section": "components"
+      },
+      {
+        "name": "Portrait fidelity",
+        "body": "About uses a 176 × 220 pixel head-and-shoulders presentation of Daniel’s supplied portrait. A precise alpha mask removes the wall, preserving original visible RGB pixels. The image sits beside prose on wide screens and above it below 1100px, without a border, shadow, or circular frame.",
+        "section": "components"
       }
     ],
     "dos": [
