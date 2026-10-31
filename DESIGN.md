@@ -108,9 +108,6 @@ components:
     height: "80px"
   project-details:
     textColor: "{colors.text}"
-  experience-row:
-    textColor: "{colors.text}"
-    padding: "24px 0"
 ---
 
 # Design System: Daniel Tam Portfolio
@@ -180,11 +177,13 @@ The centered content container has a maximum width (1184px). Desktop gutters are
 
 Large sections use the spacing scale's section-large interval on desktop and section-medium on smaller screens. Panels use panel or large padding on desktop, medium padding on phones, and small padding in compact text panels below the narrow breakpoint. Repeated small gaps, label offsets, and chips follow the same scale rather than arbitrary per-element spacing.
 
-Wide layouts combine text and project evidence in asymmetric grids. The hero uses a (1.65:1) split and the featured backend project a (1.25:1) split. Project panels stack as the available space narrows. The iOS and fencing panels share the same gallery pattern: two portrait screenshots side by side within the media stage, preserving each full image's aspect ratio. The full iOS app limit screen is a user-confirmed presentation choice. The fencing gallery contains the actual bout-scoring and school-statistics captures.
+Wide layouts combine text and project evidence in asymmetric grids. The hero uses a (1.65:1) split and the featured backend project a (1.25:1) split. Project panels stack as the available space narrows. The iOS and fencing panels share the same gallery pattern: two portrait screenshots side by side within the media stage, preserving each full image's aspect ratio. The full iOS app limit screen is a user-confirmed presentation choice. The fencing gallery contains the actual bout-scoring and school-statistics captures, followed by one full-width desktop meet overview.
+
+The desktop figure spans the project grid beneath the existing text and mobile screenshots. Its stage uses (32px) padding, falling to (24px) on phones. The CSS preview frames the actual page content, omitting browser chrome and empty margins; the image and caption both link to the unchanged original PNG. The caption wraps naturally on small screens. Browser checks at (320px), (375px), (768px), (1101px), and (1440px) confirmed the image loaded without horizontal overflow.
 
 Implemented responsive boundaries are (1100px), (800px), (600px), and (360px), using max-width queries. At the tablet breakpoint, the hero and backend project become single column. At the phone breakpoint, navigation becomes a disclosure menu when JavaScript is available, the iOS and fencing panels and About become single column, and skill groups stack. With JavaScript unavailable, all navigation links remain visible and wrap within the header.
 
-The About introduction and education occupy two columns on wide screens. Five experience rows span the full content width below them. Each row separates role, full organization name, and dates; at tablet widths the date moves below the organization, and on phones all three fields stack.
+The About introduction and education occupy two columns on wide screens. The introduction includes one short paragraph about founding the University of Maryland chapter of CS Base and teaching app development. The complete role history belongs in the linked résumé; do not repeat it as an experience list on the page.
 
 The About introduction pairs a (176px × 220px) masked portrait with prose, separated by (24px). Below (1100px), the portrait sits above the prose. It rests directly on the page without a border, shadow, or circular frame. Use Daniel's supplied transparent PNG as-is, without additional pixel edits. The portrait addition was checked at (320px), (375px), (768px), (1101px), (1280px), and (1440px), with no horizontal overflow.
 
@@ -230,11 +229,7 @@ Use native `details` and `summary` for technical explanations and coursework. Su
 
 ### Project screenshots
 
-Use the supplied captures as evidence. The hero preview and backend preview may crop for composition, with explicit links to the project or full screenshot. The iOS gallery displays both complete phone captures and descriptive captions. The fencing project reuses this gallery with two actual captures: bout scoring and event history, followed by team and individual statistics. Avoid fabricated interfaces or replacing the full app limit screenshot with the previously discussed crop.
-
-### Experience rows
-
-Five rows show the role, complete organization name, and date range without badges or abbreviations. A thin bottom border and generous vertical padding separate the entries. Roles use semibold text, organizations use muted body text, and dates use the smaller label scale. Preserve the responsive column changes described in Layout.
+Use the supplied captures as evidence. The hero preview and backend preview may crop for composition, with explicit links to the project or full screenshot. The iOS gallery displays both complete phone captures and descriptive captions. The fencing project reuses this gallery with two mobile captures: bout scoring and event history, followed by team and individual statistics, with a full-width desktop meet overview below. Avoid fabricated interfaces or replacing the full app limit screenshot with the previously discussed crop.
 
 Content is visible at rest. Reduced motion disables transitions and smooth scrolling; interaction states remain legible without animation. The shared easing is `cubic-bezier(.32,.72,0,1)`.
 

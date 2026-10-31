@@ -2,7 +2,7 @@
  * floor: 0 FAIL, 0 open REFLEX · browser: CUA, responsive checks · finish-review: subagent, ship
  * built: the project · redesign: polish · surface: absolute · v2.0.0 */
 /* Hallmark · waive 7b · surface: absolute, measured contrast above 6.8:1 · the portfolio keeps its documented black and sage palette */
-/* Hallmark · answered F15 · the portfolio preserves documented gaps for prose columns, screenshot stages, and experience rows */
+/* Hallmark · answered F15 · the portfolio preserves documented gaps for prose columns and screenshot stages */
 /* Hallmark · waive 26b · no form or unavailable action exists · the portfolio navigation button is always available and has no disabled state */
 @font-face {
   font-family: Manrope;
@@ -768,25 +768,6 @@ details[open]>summary .details-symbol::after {
   line-height: 20px
 }
 
-.experience-list {
-  margin-top: 16px;
-  display: grid;
-  gap: 16px
-}
-
-.experience-list li {
-  display: grid;
-  gap: 4px;
-  font-size: 14px;
-  line-height: 20px
-}
-
-.experience-list li>span+span {
-  font-size: 12px;
-  line-height: 16px;
-  color: var(--muted)
-}
-
 .awards-group p {
   font-size: 14px;
   line-height: 20px
@@ -1348,16 +1329,7 @@ details[open]>summary .details-symbol::after {
   }
 }
 
-.experience-group { grid-column: 1 / -1; }
-.experience-group h3 { font-size: 24px; line-height: 32px; }
-.experience-list { margin-top: 24px; gap: 0; }
-.experience-list li { grid-template-columns: minmax(0, .8fr) minmax(0, 1.4fr) auto; gap: 24px; padding-block: 24px; border-bottom: 1px solid var(--line); align-items: start; }
-.experience-list .experience-role { font-size: 14px; line-height: 20px; font-weight: 600; }
-.experience-list .experience-company { font-size: 14px; line-height: 20px; color: var(--muted); }
-.experience-list .experience-period { font-size: 12px; line-height: 16px; color: var(--muted); }
 .details-body h4 { margin: 24px 0 8px; color: var(--text); font-size: 16px; line-height: 24px; font-weight: 600; }
-@media (max-width: 800px) { .experience-list li { grid-template-columns: minmax(0, .8fr) minmax(0, 1.3fr); } .experience-period { grid-column: 2; } }
-@media (max-width: 600px) { .experience-list li { grid-template-columns: minmax(0, 1fr); gap: 8px; } .experience-period { grid-column: 1; } }
 
 [hidden] { display: none !important; }
 
@@ -1387,4 +1359,42 @@ details[open]>summary .details-symbol::after {
 }
 @media (max-width: 600px) {
   .about-profile { margin-top: 24px; }
+}
+
+.desktop-shot {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 32px;
+  background: var(--image-stage);
+}
+.desktop-shot-preview {
+  display: block;
+  position: relative;
+  aspect-ratio: 2320 / 1806;
+  overflow: clip;
+  border-radius: 8px;
+}
+/* Present the actual page content; the linked PNG retains the complete capture. */
+.desktop-shot-preview img {
+  display: block;
+  position: absolute;
+  width: 157.07%;
+  max-width: none;
+  height: auto;
+  left: -28.02%;
+  top: -13.79%;
+}
+.desktop-shot figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 16px;
+}
+@media (max-width: 600px) {
+  .desktop-shot { padding: 24px; }
 }

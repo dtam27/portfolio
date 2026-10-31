@@ -9,13 +9,14 @@ The target is software engineering internships. The latest PDF résumé, actual 
 - Full phone screenshot at `assets/projects/group-think-app-limit.png`, selected by the user for display beside Study Hall and captioned as the iOS app limit screen.
 - Discord marketplace screenshot at `assets/projects/discord-marketplace.png`.
 - Touch by Touch bout scoring and event history at `assets/projects/touch-by-touch-scoring.png`.
-- Touch by Touch team and individual statistics at `assets/projects/touch-by-touch-school-stats.png`. The gallery uses these two fencing screenshots.
+- Touch by Touch team and individual statistics at `assets/projects/touch-by-touch-school-stats.png`.
+- Touch by Touch desktop meet overview at `assets/projects/touch-by-touch-desktop-meet.png`, added as a wide preview beneath the mobile gallery. A link opens the complete original capture. The redundant desktop statistics capture was omitted.
 - Verified public GroupThink source at https://github.com/Eliu1117/GroupThink.
 - Confirmed end to end ownership of the bot.
 - Confirmed GroupThink responsibilities: UI and frontend, Firebase integration, and some backend work.
 - Source-supported Discord permission design: named permissions, per-server staff role mappings, shared checks across command modules, and cached mapping invalidation after configuration changes.
 - GroupThink's stale session-total explanation and work on a live Firestore profile listener with cleanup. The source supports describing that work; a verified runtime fix or measured improvement has not been established.
-- All five experience rows with full organization names and dates, the expanded Bachelor of Science degree names, grade point average, First-Year Innovation & Research Experience program, and GIAC issuer name.
+- Full role history in the linked résumé. About now highlights chapter founding and teaching in one short paragraph, without an experience list. Education retains expanded Bachelor of Science degree names, grade point average, First-Year Innovation & Research Experience program, and GIAC issuer name.
 - Preference for direct headings and plain copy, replacing the earlier slogans.
 - Daniel's supplied transparent replacement headshot, displayed in About without additional pixel edits.
 
@@ -53,7 +54,7 @@ Use this for new projects or fill only the unanswered fields for existing projec
 
 **Touch by Touch Fencing:** Co-development, reported deployment to more than 135 participating schools, live competition testing, and the two actual screenshots are already covered. Identify the specific features Daniel personally built and, if available, one finding from competition testing and how it was handled. A live or archived demo URL would make this work easier to assess. Keep school deployment reach distinct from active usage.
 
-**Leadership and credentials:** All five roles, full organizations, and dates are included. CS Base has scope of 15 volunteers and 100 students; an example of the curriculum Daniel designed and an observed teaching outcome would add detail. Cloud Security Essentials (GCLD), June 2024, and Foundational Cybersecurity Technologies (GFACT), September 2023, are issued by GIAC Certifications (Global Information Assurance Certification); verification URLs are optional. AWS Certified Cloud Practitioner remains in progress.
+**Leadership and credentials:** The full role history stays in the résumé. About uses a brief, relevant note on founding the CS Base chapter and teaching app development. An example of Daniel's curriculum and an observed teaching outcome would add evidence beyond a role title. Cloud Security Essentials (GCLD), June 2024, and Foundational Cybersecurity Technologies (GFACT), September 2023, are issued by GIAC Certifications (Global Information Assurance Certification); verification URLs are optional. AWS Certified Cloud Practitioner remains in progress.
 
 ## Optional followup evidence
 

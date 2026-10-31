@@ -339,14 +339,6 @@
       "description": "Native expandable technical detail with a sage plus/minus symbol.",
       "html": "<details class=\"ds-details\"><summary>Inside the build<span class=\"ds-details-symbol\" aria-hidden=\"true\"></span></summary><div class=\"ds-details-body\"><p>SwiftUI provides the native interface, while Firebase supports sign in and realtime state synchronization across devices.</p><h4>Keeping session totals current</h4><p>A live profile listener lets the summary react as updated Firestore data arrives, with cleanup when the listener ends.</p></div></details>",
       "css": ".ds-details{font-family:var(--font,Manrope,system-ui,sans-serif);max-width:520px;color:var(--text,#f3f3ee)}.ds-details summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:48px;list-style:none;cursor:pointer;font-size:14px;line-height:20px;font-weight:600}.ds-details summary::-webkit-details-marker{display:none}.ds-details-symbol{position:relative;width:16px;height:16px;flex:none;color:var(--accent,#b7c5a3)}.ds-details-symbol::before,.ds-details-symbol::after{content:\"\";position:absolute;background:currentColor;top:7px;left:2px;width:12px;height:1px;transition:transform 180ms var(--ease,cubic-bezier(.32,.72,0,1))}.ds-details-symbol::after{transform:rotate(90deg)}.ds-details[open] .ds-details-symbol::after{transform:rotate(0)}.ds-details-body{padding-top:8px;color:var(--muted,#b0b0a8);font-size:14px;line-height:20px}.ds-details-body p{margin:0}@media(hover:hover) and (pointer:fine){.ds-details summary:hover{color:var(--accent,#b7c5a3)}}.ds-details summary:active{color:var(--accent,#b7c5a3)}.ds-details summary:focus-visible{outline:2px solid var(--accent,#b7c5a3);outline-offset:4px;border-radius:4px}@media(prefers-reduced-motion:reduce){.ds-details-symbol::before,.ds-details-symbol::after{transition:none}}.ds-details-body h4{margin:24px 0 8px;color:var(--text,#f3f3ee);font-size:16px;line-height:24px;font-weight:600}"
-    },
-    {
-      "name": "Experience row",
-      "kind": "custom",
-      "refersTo": "experience-row",
-      "description": "Role, full organization, and dates in a responsive bordered row.",
-      "html": "<ul class=\"ds-experience\"><li><span class=\"ds-experience-role\">Recruitment ambassador</span><span class=\"ds-experience-company\">College of Computer, Mathematical, and Natural Sciences<br>University of Maryland</span><span class=\"ds-experience-period\">September 2026 to present</span></li></ul>",
-      "css": ".ds-experience{font-family:var(--font,Manrope,system-ui,sans-serif);margin:0;padding:0;list-style:none;color:var(--text,#f3f3ee)}.ds-experience li{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr) auto;gap:24px;padding-block:24px;border-bottom:1px solid var(--line,#313131);align-items:start}.ds-experience-role{font-size:14px;line-height:20px;font-weight:600}.ds-experience-company{font-size:14px;line-height:20px;color:var(--muted,#b0b0a8)}.ds-experience-period{font-size:12px;line-height:16px;color:var(--muted,#b0b0a8)}@media(max-width:800px){.ds-experience li{grid-template-columns:minmax(0,.8fr) minmax(0,1.3fr)}.ds-experience-period{grid-column:2}}@media(max-width:600px){.ds-experience li{grid-template-columns:minmax(0,1fr);gap:8px}.ds-experience-period{grid-column:1}}"
     }
   ],
   "narrative": {
@@ -383,6 +375,11 @@
       {
         "name": "Portrait fidelity",
         "body": "About uses a 176 × 220 pixel head-and-shoulders presentation of Daniel’s supplied transparent replacement portrait. Use the PNG as-is, without additional pixel edits. The image sits beside prose on wide screens and above it below 1100px, without a border, shadow, or circular frame.",
+        "section": "components"
+      },
+      {
+        "name": "About relevance",
+        "body": "Use a short introduction and a concrete example of founding the CS Base chapter and teaching app development. Keep the full role history in the linked résumé rather than repeating it as experience rows.",
         "section": "components"
       }
     ],
