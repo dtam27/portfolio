@@ -17,7 +17,7 @@ The target is software engineering internships. The latest PDF résumé, actual 
 - GroupThink's stale session-total explanation and work on a live Firestore profile listener with cleanup. The source supports describing that work; a verified runtime fix or measured improvement has not been established.
 - All five experience rows with full organization names and dates, the expanded Bachelor of Science degree names, grade point average, First-Year Innovation & Research Experience program, and GIAC issuer name.
 - Preference for direct headings and plain copy, replacing the earlier slogans.
-- Daniel's headshot, displayed in About with a precise foreground mask that preserves the original photo pixels.
+- Daniel's supplied transparent replacement headshot, displayed in About without additional pixel edits.
 
 The site links directly to the supplied PDF résumé. The older DOCX is retained as a legacy file and is not offered as an equivalent download.
 

@@ -186,7 +186,7 @@ Implemented responsive boundaries are (1100px), (800px), (600px), and (360px), u
 
 The About introduction and education occupy two columns on wide screens. Five experience rows span the full content width below them. Each row separates role, full organization name, and dates; at tablet widths the date moves below the organization, and on phones all three fields stack.
 
-The About introduction pairs a (176px × 220px) masked portrait with prose, separated by (24px). Below (1100px), the portrait sits above the prose. It rests directly on the page without a border, shadow, or circular frame. Its alpha follows the actual subject; the original face and clothing pixels are preserved. The portrait addition was checked at (320px), (375px), (768px), (1101px), (1280px), and (1440px), with no horizontal overflow.
+The About introduction pairs a (176px × 220px) masked portrait with prose, separated by (24px). Below (1100px), the portrait sits above the prose. It rests directly on the page without a border, shadow, or circular frame. Use Daniel's supplied transparent PNG as-is, without additional pixel edits. The portrait addition was checked at (320px), (375px), (768px), (1101px), (1280px), and (1440px), with no horizontal overflow.
 
 The latest CUA browser checks covered widths (320px), (375px), (640px), (768px), (1024px), (1280px), (1440px), and (1920px), with no horizontal overflow. These are desktop browser viewport checks; hardware touch behavior has not been tested. Hallmark’s Puppeteer browser-renderer check was unavailable. The independent Hallmark review returned ship with no material finish findings within the reviewed polish scope.
 

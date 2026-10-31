@@ -382,7 +382,7 @@
       },
       {
         "name": "Portrait fidelity",
-        "body": "About uses a 176 × 220 pixel head-and-shoulders presentation of Daniel’s supplied portrait. A precise alpha mask removes the wall, preserving original visible RGB pixels. The image sits beside prose on wide screens and above it below 1100px, without a border, shadow, or circular frame.",
+        "body": "About uses a 176 × 220 pixel head-and-shoulders presentation of Daniel’s supplied transparent replacement portrait. Use the PNG as-is, without additional pixel edits. The image sits beside prose on wide screens and above it below 1100px, without a border, shadow, or circular frame.",
         "section": "components"
       }
     ],

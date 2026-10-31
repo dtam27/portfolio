@@ -3,7 +3,7 @@
 The portfolio uses Daniel's supplied portrait, actual screenshots, and latest résumé.
 
 - `resume.pdf`: latest user-supplied résumé, linked directly from the site.
-- `headshot.png`: Daniel's supplied photo with a foreground alpha mask generated locally using Apple Vision. Every visible RGB pixel matches the original photo; only transparency changed. The About layout crops it for head and shoulders. Do not replace it with a generated likeness.
+- `headshot.png`: Daniel's supplied transparent replacement portrait, copied without pixel edits. The About layout crops it for head and shoulders. Use the supplied image as-is.
 - `resume.docx`: older résumé retained as a legacy file; not linked as a current download.
 - `projects/discord-marketplace.png`: user-supplied Discord marketplace and support workflow capture.
 - `projects/group-think-study-hall.png`: user-supplied GroupThink Study Hall capture showing a shared focus session.
