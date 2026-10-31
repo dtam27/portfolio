@@ -1,56 +1,63 @@
 # Content to make the portfolio stronger
 
-The target is software engineering internships. The latest PDF résumé, project screenshots, and core ownership details have been received. The most valuable next addition is a concrete engineering decision and result for each project.
+The target is software engineering internships. The latest PDF résumé, actual screenshots for all three projects, ownership details, and two concrete engineering explanations have been received. The most useful next additions are verification of outcomes, the tradeoffs behind those decisions, and public demos or release links.
 
 ## Already received
 
-- Latest PDF résumé, with updated project dates, leadership details, and full certification titles.
+- Latest PDF résumé, with updated project dates, complete education and experience details, and full certification titles.
 - GroupThink Study Hall screenshot at `assets/projects/group-think-study-hall.png`.
 - Full phone screenshot at `assets/projects/group-think-app-limit.png`, selected by the user for display beside Study Hall and captioned as the iOS app limit screen.
 - Discord marketplace screenshot at `assets/projects/discord-marketplace.png`.
+- Touch by Touch bout scoring and event history at `assets/projects/touch-by-touch-scoring.png`.
+- Touch by Touch team and individual statistics at `assets/projects/touch-by-touch-school-stats.png`. The gallery uses these two fencing screenshots.
 - Verified public GroupThink source at https://github.com/Eliu1117/GroupThink.
 - Confirmed end to end ownership of the bot.
 - Confirmed GroupThink responsibilities: UI and frontend, Firebase integration, and some backend work.
+- Source-supported Discord permission design: named permissions, per-server staff role mappings, shared checks across command modules, and cached mapping invalidation after configuration changes.
+- GroupThink's stale session-total explanation and work on a live Firestore profile listener with cleanup. The source supports describing that work; a verified runtime fix or measured improvement has not been established.
+- All five experience rows with full organization names and dates, the expanded Bachelor of Science degree names, grade point average, First-Year Innovation & Research Experience program, and GIAC issuer name.
+- Preference for direct headings and plain copy, replacing the earlier slogans.
 
 The site links directly to the supplied PDF résumé. The older DOCX is retained as a legacy file and is not offered as an equivalent download.
 
-## Send these first
+## Most useful next additions
 
-1. **Hardest engineering problem.** One specific challenge you solved for each featured project and how you knew the solution worked.
-2. **Technical decisions.** A concrete design choice, an alternative you considered, and the tradeoff that made your approach appropriate. For GroupThink, identify one representative screen or Firebase flow you built.
+1. **Verification of the featured engineering work.** A reproducible test or observed result for per-server permission changes and GroupThink session totals. State what was checked and what remains uncertain.
+2. **Decision tradeoffs.** An alternative considered for the shared permission manager or profile listener, and why the chosen approach fit the project. Add details only when they reflect Daniel's own decisions.
 3. **Demo and release URLs.** A live site, TestFlight invitation, app listing, or short demo recording that can be public. Private code can be described without publishing it.
-4. **Measurement definitions.** How user and deployment counts were obtained, the time period they cover, and any actual usage measurements. Include monitoring evidence before using an uptime percentage.
-5. **Recruiting and style preferences.** The internship season, one or two portfolio links, and the specific things you like about them. A clear portrait is optional.
+4. **Measurement definitions.** How community, user, and school counts were obtained, the period they cover, and any actual usage measurements. Include monitoring evidence before using an uptime percentage.
+5. **Recruiting details.** The internship season and roles of interest. A clear portrait is optional.
 
 ## Project intake template
 
-Copy this for each project. Short bullet answers are enough.
+Use this for new projects or fill only the unanswered fields for existing projects. Short bullet answers are enough.
 
 - **Current status:** In development, released, maintained, or archived.
 - **Problem and audience:** Who needed it, and what were they trying to do?
 - **My contribution:** The components and workflows I personally built.
 - **Team:** Number of collaborators and how work was divided.
 - **Main workflow:** What a user does, from start to useful result.
-- **Hardest problem:** The specific technical challenge and what made it difficult.
+- **Technical challenge:** The specific issue and what made it difficult.
 - **Decision and tradeoff:** What I chose, an alternative I considered, and why.
+- **Verification:** What I tested or observed, and whether the change is released.
 - **Result:** What changed, with a measurement, time period, and counting method where available.
 - **Links:** Live demo, app listing, TestFlight, demo recording, or additional public source.
-- **Screenshot context:** What the supplied image shows and which part you built.
+- **Screenshot context:** What the supplied image shows and which part I built.
 
 ## Questions specific to the current projects
 
-**Discord bot platform:** End to end bot ownership is confirmed. The résumé describes three bots, January 2026 to the present, and more than 20,000 total users. What task does each bot perform? Which technical decision or failure case best demonstrates your work? How were the users counted, and what period does that cover? The earlier approximately 22,000 figure described community membership. Neither figure should be labeled active usage without a separate measurement. Leave out the 99.9% uptime figure until a monitoring source, time window, and definition are available.
+**Discord bot platform:** End to end ownership and the configurable permission design are already described. The most useful followup is a concrete test of changing a server's staff role mappings and the expected authorization behavior after cache invalidation. What alternative design was considered, and why was a shared manager appropriate? The résumé describes three bots; explaining the task each one performs would add context. Keep the approximately 22,000 community members distinct from measured active users. Leave out the 99.9% uptime figure until a monitoring source, time window, and definition are available.
 
-**GroupThink:** UI and frontend, Firebase integration, and some backend work are confirmed. Which specific screen or Firebase flow is the strongest example? What was the hardest state or sync issue? Is there a TestFlight or released build, and can it be shown? The supplied Study Hall and full iOS app limit captures are already available for the visual update.
+**GroupThink:** UI and frontend, Firebase integration, and some backend work are confirmed. The current explanation covers a summary opening before session credit arrives and work on a live profile listener with cleanup. What test or observation confirms the intended behavior? Was that change released, and what alternatives were considered? A TestFlight or released build would help visitors assess the project. The Study Hall and full iOS app limit captures are already supplied. Do not describe the listener work as a confirmed runtime fix or measured performance improvement without further evidence.
 
-**Touch by Touch Fencing:** The résumé confirms co-development, deployment to 135+ participating schools, and live competition testing. Which features did you personally build? What did a competition test reveal, and how did you address it? A live or archived demo URL would make this work easier to assess. Keep school deployment reach distinct from active usage.
+**Touch by Touch Fencing:** Co-development, reported deployment to more than 135 participating schools, live competition testing, and the two actual screenshots are already covered. Identify the specific features Daniel personally built and, if available, one finding from competition testing and how it was handled. A live or archived demo URL would make this work easier to assess. Keep school deployment reach distinct from active usage.
 
-**Leadership and credentials:** CS Base already has useful scope: 15 volunteers and 100 students. Add one example of the curriculum you designed and its outcome. GIAC Cloud Security Essentials (GCLD), June 2024, and GIAC Foundational Cybersecurity Technologies (GFACT), September 2023, are supplied; verification URLs are optional. AWS Certified Cloud Practitioner remains in progress.
+**Leadership and credentials:** All five roles, full organizations, and dates are included. CS Base has scope of 15 volunteers and 100 students; an example of the curriculum Daniel designed and an observed teaching outcome would add detail. Cloud Security Essentials (GCLD), June 2024, and Foundational Cybersecurity Technologies (GFACT), September 2023, are issued by GIAC Certifications (Global Information Assurance Certification); verification URLs are optional. AWS Certified Cloud Practitioner remains in progress.
 
-## Optional deeper code review
+## Optional followup evidence
 
-A bot source ZIP is optional for a deeper architecture case study. It is not needed to finish the visual update. If shared, use it to verify the architecture, identify meaningful design decisions, and select code examples that can be discussed publicly.
+The featured engineering explanations already have source support. Additional code examples, tests, or release notes can strengthen them if they can be discussed publicly. Summarize the relevant technical facts without publishing private conversation identifiers, local project paths, or raw history.
 
 ## How new material should be used
 
-Prioritize the strongest two or three projects. Show the problem, personal contribution, technical decision, and result beside the relevant visual. Keep organizational reach distinct from measured software adoption. Use actual screenshots and supported claims throughout.
+Prioritize the strongest two or three projects. Show the problem, personal contribution, technical decision, and verified result beside the relevant visual. Keep organizational reach distinct from measured software adoption. Preserve the supplied screenshots, plain labels, and supported claims.

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-31T03:28:03.868503+00:00",
+  "generatedAt": "2026-10-31T04:07:59.015802+00:00",
   "title": "Design System: Daniel Tam Portfolio",
   "extensions": {
     "colorMeta": {
@@ -171,6 +171,34 @@
           "oklch(84% 0.017 120)",
           "oklch(95% 0.017 120)"
         ]
+      },
+      "meta-divider": {
+        "role": "neutral",
+        "displayName": "Muted Olive Divider",
+        "tonalRamp": [
+          "oklch(15% 0.017 120)",
+          "oklch(26% 0.017 120)",
+          "oklch(38% 0.017 120)",
+          "oklch(49% 0.017 120)",
+          "oklch(61% 0.017 120)",
+          "oklch(72% 0.017 120)",
+          "oklch(84% 0.017 120)",
+          "oklch(95% 0.017 120)"
+        ]
+      },
+      "scrollbar": {
+        "role": "neutral",
+        "displayName": "Olive Gray Scrollbar",
+        "tonalRamp": [
+          "oklch(15% 0.018 125)",
+          "oklch(26% 0.018 125)",
+          "oklch(38% 0.018 125)",
+          "oklch(49% 0.018 125)",
+          "oklch(61% 0.018 125)",
+          "oklch(72% 0.018 125)",
+          "oklch(84% 0.018 125)",
+          "oklch(95% 0.018 125)"
+        ]
       }
     },
     "typographyMeta": {
@@ -261,8 +289,8 @@
       "kind": "button",
       "refersTo": "button-primary",
       "description": "Compact sage action used to lead a visitor into the work.",
-      "html": "<a class=\"ds-button-primary\" href=\"#work\">Explore my work <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></a>",
-      "css": ".ds-button-primary{font-family:var(--font,Manrope,system-ui,sans-serif);display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:48px;padding:8px 12px;border:1px solid transparent;border-radius:4px;background:var(--accent,#b7c5a3);color:var(--accent-ink,#1b2616);font-size:16px;line-height:24px;font-weight:600;text-decoration:none;transition:background-color 240ms var(--ease,cubic-bezier(.32,.72,0,1)),color 240ms var(--ease,cubic-bezier(.32,.72,0,1)),transform 240ms var(--ease,cubic-bezier(.32,.72,0,1))}.ds-button-primary svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:none}@media(hover:hover) and (pointer:fine){.ds-button-primary:hover{background:#cfdbc1}}.ds-button-primary:focus-visible{outline:2px solid var(--accent,#b7c5a3);outline-offset:4px;border-radius:4px}.ds-button-primary:active{transform:translateY(1px);transition-duration:120ms}@media(prefers-reduced-motion:reduce){.ds-button-primary{transition:none}}"
+      "html": "<a class=\"ds-button-primary\" href=\"#projects\">Explore my work <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 5v14m-6-6 6 6 6-6\"/></svg></a>",
+      "css": ".ds-button-primary{font-family:var(--font,Manrope,system-ui,sans-serif);display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:48px;padding:8px 12px;border:1px solid transparent;border-radius:4px;background:var(--accent,#b7c5a3);color:var(--accent-ink,#1b2616);font-size:16px;line-height:24px;font-weight:600;text-decoration:none;transition:background-color 240ms var(--ease,cubic-bezier(.32,.72,0,1)),color 240ms var(--ease,cubic-bezier(.32,.72,0,1)),transform 240ms var(--ease,cubic-bezier(.32,.72,0,1))}.ds-button-primary svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:none}@media(hover:hover) and (pointer:fine){.ds-button-primary:hover{background:var(--accent-hover,#cfdbc1)}}.ds-button-primary:focus-visible{outline:2px solid var(--accent,#b7c5a3);outline-offset:4px;border-radius:4px}.ds-button-primary:active{transform:translateY(1px);transition-duration:120ms}@media(prefers-reduced-motion:reduce){.ds-button-primary{transition:none}}"
     },
     {
       "name": "Outlined résumé link",
@@ -285,7 +313,7 @@
       "kind": "nav",
       "refersTo": "navigation",
       "description": "A compact desktop navigation row with a sage current-location rule.",
-      "html": "<nav class=\"ds-navigation\" aria-label=\"Primary preview\"><a href=\"#work\" aria-current=\"location\">Work</a><a href=\"#about\">About</a><a href=\"#contact\">Contact</a></nav>",
+      "html": "<nav class=\"ds-navigation\" aria-label=\"Primary preview\"><a href=\"#projects\" aria-current=\"location\">Work</a><a href=\"#about\">About</a><a href=\"#contact\">Contact</a></nav>",
       "css": ".ds-navigation{font-family:var(--font,Manrope,system-ui,sans-serif);display:flex;align-items:center;flex-wrap:wrap;gap:24px;background:var(--bg,#000000);padding:0 16px;border-bottom:1px solid var(--line,#313131);min-height:80px}.ds-navigation a{position:relative;display:inline-flex;align-items:center;min-height:48px;color:var(--muted,#b0b0a8);font-size:14px;line-height:24px;font-weight:500;text-decoration:none;transition:color 240ms var(--ease,cubic-bezier(.32,.72,0,1))}.ds-navigation a[aria-current=\"location\"]{color:var(--text,#f3f3ee)}.ds-navigation a[aria-current=\"location\"]::after{content:\"\";position:absolute;bottom:4px;left:0;right:0;height:2px;background:var(--accent,#b7c5a3)}@media(hover:hover) and (pointer:fine){.ds-navigation a:hover{color:var(--text,#f3f3ee)}}.ds-navigation a:focus-visible{outline:2px solid var(--accent,#b7c5a3);outline-offset:4px;border-radius:4px}.ds-navigation a:active{transform:translateY(1px)}@media(prefers-reduced-motion:reduce){.ds-navigation a{transition:none}}"
     },
     {
@@ -294,28 +322,36 @@
       "refersTo": "tag",
       "description": "Noninteractive technology labels that wrap within a project.",
       "html": "<ul class=\"ds-tags\" aria-label=\"Core technologies\"><li>Python</li><li>FastAPI</li><li>SQLAlchemy</li><li>OAuth2 / JWT</li></ul>",
-      "css": ".ds-tags{font-family:var(--font,Manrope,system-ui,sans-serif);display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}.ds-tags li{padding:4px 8px;background:var(--surface-hover,#1f1f1f);border:1px solid #42443e;border-radius:4px;color:#d4d8cc;font-size:12px;line-height:16px}"
+      "css": ".ds-tags{font-family:var(--font,Manrope,system-ui,sans-serif);display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}.ds-tags li{padding:4px 8px;background:var(--surface-hover,#1f1f1f);border:1px solid var(--tag-border,#42443e);border-radius:4px;color:var(--tag-text,#d4d8cc);font-size:12px;line-height:16px}"
     },
     {
       "name": "Project panel",
       "kind": "card",
       "refersTo": "project-panel",
       "description": "A flat bordered frame with project metadata, title, and contribution.",
-      "html": "<article class=\"ds-project\"><p class=\"ds-project-meta\">iOS / Jun 2026–present</p><h3>Group Think</h3><p class=\"ds-project-copy\">A collaborative iOS app for shared study halls and group screen time limits.</p><p class=\"ds-project-role\"><strong>My role</strong> UI and frontend, Firebase integration, and backend contributions.</p></article>",
-      "css": ".ds-project{font-family:var(--font,Manrope,system-ui,sans-serif);max-width:560px;padding:40px;border:1px solid var(--line,#313131);border-radius:12px;background:var(--surface,#181818);color:var(--text,#f3f3ee);overflow:hidden}.ds-project p,.ds-project h3{margin:0}.ds-project-meta{font-size:12px;line-height:16px;color:var(--muted,#b0b0a8)}.ds-project h3{margin-top:16px;font-size:30px;line-height:36px;letter-spacing:-.03em;font-weight:600}.ds-project-copy{margin-top:16px!important;font-size:16px;line-height:24px;color:var(--muted,#b0b0a8)}.ds-project-role{margin-top:16px!important;font-size:14px;line-height:20px;color:var(--muted,#b0b0a8)}.ds-project-role strong{margin-right:8px;color:var(--text,#f3f3ee);font-weight:600}@media(max-width:600px){.ds-project{padding:24px}.ds-project h3{font-size:24px;line-height:32px}}"
+      "html": "<article class=\"ds-project\"><h3>Group Think</h3><p class=\"ds-project-meta\">iOS / June 2026 to present</p><p class=\"ds-project-copy\">A collaborative iOS app for shared study halls and group screen time limits.</p><p class=\"ds-project-role\"><strong>My role</strong> UI and frontend, Firebase integration, and backend contributions.</p></article>",
+      "css": ".ds-project{font-family:var(--font,Manrope,system-ui,sans-serif);max-width:560px;padding:40px;border:1px solid var(--line,#313131);border-radius:12px;background:var(--surface,#181818);color:var(--text,#f3f3ee);overflow:hidden}.ds-project p,.ds-project h3{margin:0}.ds-project-meta{font-size:12px;line-height:16px;color:var(--muted,#b0b0a8)}.ds-project h3{margin-top:16px;font-size:30px;line-height:36px;letter-spacing:-.03em;font-weight:600}.ds-project-copy{margin-top:16px!important;font-size:16px;line-height:24px;color:var(--muted,#b0b0a8)}.ds-project-role{margin-top:16px!important;font-size:14px;line-height:20px;color:var(--muted,#b0b0a8)}.ds-project-role strong{margin-right:8px;color:var(--text,#f3f3ee);font-weight:600}@media(max-width:800px){.ds-project h3{font-size:24px;line-height:32px}}@media(max-width:600px){.ds-project{padding:24px}}"
     },
     {
       "name": "Native project disclosure",
       "kind": "custom",
       "refersTo": "project-details",
       "description": "Native expandable technical detail with a sage plus/minus symbol.",
-      "html": "<details class=\"ds-details\"><summary>Inside the build<span class=\"ds-details-symbol\" aria-hidden=\"true\"></span></summary><div class=\"ds-details-body\"><p>SwiftUI provides the native interface, while Firebase supports sign in and realtime state synchronization across devices.</p></div></details>",
-      "css": ".ds-details{font-family:var(--font,Manrope,system-ui,sans-serif);max-width:520px;color:var(--text,#f3f3ee)}.ds-details summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:48px;list-style:none;cursor:pointer;font-size:14px;line-height:20px;font-weight:600}.ds-details summary::-webkit-details-marker{display:none}.ds-details-symbol{position:relative;width:16px;height:16px;flex:none;color:var(--accent,#b7c5a3)}.ds-details-symbol::before,.ds-details-symbol::after{content:\"\";position:absolute;background:currentColor;top:7px;left:2px;width:12px;height:1px;transition:transform 180ms var(--ease,cubic-bezier(.32,.72,0,1))}.ds-details-symbol::after{transform:rotate(90deg)}.ds-details[open] .ds-details-symbol::after{transform:rotate(0)}.ds-details-body{padding-top:8px;color:var(--muted,#b0b0a8);font-size:14px;line-height:20px}.ds-details-body p{margin:0}@media(hover:hover) and (pointer:fine){.ds-details summary:hover{color:var(--accent,#b7c5a3)}}.ds-details summary:active{color:var(--accent,#b7c5a3)}.ds-details summary:focus-visible{outline:2px solid var(--accent,#b7c5a3);outline-offset:4px;border-radius:4px}@media(prefers-reduced-motion:reduce){.ds-details-symbol::before,.ds-details-symbol::after{transition:none}}"
+      "html": "<details class=\"ds-details\"><summary>Inside the build<span class=\"ds-details-symbol\" aria-hidden=\"true\"></span></summary><div class=\"ds-details-body\"><p>SwiftUI provides the native interface, while Firebase supports sign in and realtime state synchronization across devices.</p><h4>Keeping session totals current</h4><p>A live profile listener lets the summary react as updated Firestore data arrives, with cleanup when the listener ends.</p></div></details>",
+      "css": ".ds-details{font-family:var(--font,Manrope,system-ui,sans-serif);max-width:520px;color:var(--text,#f3f3ee)}.ds-details summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:48px;list-style:none;cursor:pointer;font-size:14px;line-height:20px;font-weight:600}.ds-details summary::-webkit-details-marker{display:none}.ds-details-symbol{position:relative;width:16px;height:16px;flex:none;color:var(--accent,#b7c5a3)}.ds-details-symbol::before,.ds-details-symbol::after{content:\"\";position:absolute;background:currentColor;top:7px;left:2px;width:12px;height:1px;transition:transform 180ms var(--ease,cubic-bezier(.32,.72,0,1))}.ds-details-symbol::after{transform:rotate(90deg)}.ds-details[open] .ds-details-symbol::after{transform:rotate(0)}.ds-details-body{padding-top:8px;color:var(--muted,#b0b0a8);font-size:14px;line-height:20px}.ds-details-body p{margin:0}@media(hover:hover) and (pointer:fine){.ds-details summary:hover{color:var(--accent,#b7c5a3)}}.ds-details summary:active{color:var(--accent,#b7c5a3)}.ds-details summary:focus-visible{outline:2px solid var(--accent,#b7c5a3);outline-offset:4px;border-radius:4px}@media(prefers-reduced-motion:reduce){.ds-details-symbol::before,.ds-details-symbol::after{transition:none}}.ds-details-body h4{margin:24px 0 8px;color:var(--text,#f3f3ee);font-size:16px;line-height:24px;font-weight:600}"
+    },
+    {
+      "name": "Experience row",
+      "kind": "custom",
+      "refersTo": "experience-row",
+      "description": "Role, full organization, and dates in a responsive bordered row.",
+      "html": "<ul class=\"ds-experience\"><li><span class=\"ds-experience-role\">Recruitment ambassador</span><span class=\"ds-experience-company\">College of Computer, Mathematical, and Natural Sciences<br>University of Maryland</span><span class=\"ds-experience-period\">September 2026 to present</span></li></ul>",
+      "css": ".ds-experience{font-family:var(--font,Manrope,system-ui,sans-serif);margin:0;padding:0;list-style:none;color:var(--text,#f3f3ee)}.ds-experience li{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr) auto;gap:24px;padding-block:24px;border-bottom:1px solid var(--line,#313131);align-items:start}.ds-experience-role{font-size:14px;line-height:20px;font-weight:600}.ds-experience-company{font-size:14px;line-height:20px;color:var(--muted,#b0b0a8)}.ds-experience-period{font-size:12px;line-height:16px;color:var(--muted,#b0b0a8)}@media(max-width:800px){.ds-experience li{grid-template-columns:minmax(0,.8fr) minmax(0,1.3fr)}.ds-experience-period{grid-column:2}}@media(max-width:600px){.ds-experience li{grid-template-columns:minmax(0,1fr);gap:8px}.ds-experience-period{grid-column:1}}"
     }
   ],
   "narrative": {
-    "northStar": "The Software Workbench",
-    "overview": "This phrase describes the implemented portfolio: a quiet, practical setting for real software work. The retained black and dark neutral surfaces, warm light text, and muted sage accent give the site a measured, technical character. Manrope carries every text role, and the contrast between large headings and compact project metadata creates hierarchy without visual noise.\n\nThe interface is spacious around major sections and denser within project evidence. Screenshots supply the visual specificity; borders, restrained corners, and tonal layers organize them. The workbench metaphor records the existing refinement rather than introducing a replacement visual identity. Keep the static HTML, CSS, and JavaScript system straightforward to maintain on GitHub Pages.",
+    "northStar": "Daniel Tam Portfolio",
+    "overview": "The portfolio retains black and dark neutral surfaces, warm light text, and a muted sage accent. Manrope carries every text role. Large headings, compact metadata, and readable descriptions let visitors scan Daniel's work and qualifications without decorative copy.\n\nMajor sections are spacious; project details are more compact. Real screenshots provide visual evidence, while thin borders, modest corners, and tonal surfaces organize the page. Headings use direct labels such as “Daniel Tam,” “About me,” “Technical skills,” and “Contact.” Keep the static HTML, CSS, and JavaScript system straightforward to maintain on GitHub Pages.",
     "keyCharacteristics": [
       "Dark neutral surfaces with a single muted sage accent.",
       "Real project screenshots as the primary visual evidence.",
@@ -325,22 +361,22 @@
     ],
     "rules": [
       {
-        "name": "The Single Accent Rule",
+        "name": "Accent use",
         "body": "Use sage for intentional emphasis and interaction; let the neutral surfaces carry the composition.",
         "section": "colors"
       },
       {
-        "name": "The One Typeface Rule",
+        "name": "Typeface",
         "body": "Use the local Manrope family throughout; establish hierarchy through size, weight, spacing, and contrast.",
         "section": "typography"
       },
       {
-        "name": "The Tonal Depth Rule",
+        "name": "Surface depth",
         "body": "Separate regions with the established neutral surfaces and borders; keep their resting appearance flat.",
         "section": "elevation"
       },
       {
-        "name": "The Optional Motion Rule",
+        "name": "Optional motion",
         "body": "Content is visible at rest. Reduced motion disables transitions and smooth scrolling; interaction states remain legible without animation. The shared easing is `cubic-bezier(.32,.72,0,1)`.",
         "section": "components"
       }
@@ -348,6 +384,7 @@
     "dos": [
       "Do preserve the dark neutral and sage identity when extending the site.",
       "Do use the local Manrope family and the established text hierarchy.",
+      "Do use direct headings and full qualification, organization, and date wording.",
       "Do use real project screenshots with meaningful alternative text and captions.",
       "Do keep full phone captures intact in the iOS gallery.",
       "Do retain visible keyboard focus, native disclosures, and visible navigation without JavaScript.",

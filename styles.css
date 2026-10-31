@@ -1,3 +1,9 @@
+/* Hallmark · checked: 2026-10-30 · genre: modern-minimal (inferred)
+ * floor: 0 FAIL, 0 open REFLEX · browser: CUA, eight widths · finish-review: subagent, ship
+ * built: the project · redesign: polish · surface: absolute · v2.0.0 */
+/* Hallmark · waive 7b · surface: absolute, measured contrast above 6.8:1 · the portfolio keeps its documented black and sage palette */
+/* Hallmark · answered F15 · the portfolio preserves documented gaps for prose columns, screenshot stages, and experience rows */
+/* Hallmark · waive 26b · no form or unavailable action exists · the portfolio navigation button is always available and has no disabled state */
 @font-face {
   font-family: Manrope;
   font-style: normal;
@@ -10,6 +16,12 @@
   --bg: #000000;
   --surface: #181818;
   --surface-hover: #1f1f1f;
+  --image-stage: #272727;
+  --accent-hover: #cfdbc1;
+  --tag-border: #42443e;
+  --tag-text: #d4d8cc;
+  --meta-divider: #818579;
+  --scrollbar: #595e52;
   --text: #f3f3ee;
   --muted: #b0b0a8;
   --line: #313131;
@@ -26,12 +38,15 @@
 }
 
 html {
+  overflow-x: clip;
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-h) + 24px);
-  scrollbar-color: #595e52 var(--bg)
+  scrollbar-color: var(--scrollbar) var(--bg)
 }
 
 body {
+  overflow-x: clip;
+  font-synthesis: none;
   margin: 0;
   background: var(--bg);
   color: var(--text);
@@ -88,6 +103,8 @@ p {
 }
 
 h1,h2,h3 {
+  overflow-wrap: break-word;
+  min-width: 0;
   margin: 0;
   font-weight: 600;
   text-wrap: balance
@@ -274,10 +291,6 @@ ul {
   letter-spacing: -.04em
 }
 
-.hero h1>span {
-  color: var(--muted)
-}
-
 .hero-lede {
   max-width: 560px;
   margin-top: 32px;
@@ -317,7 +330,7 @@ summary:active {
 
 @media (hover: hover) and (pointer: fine) {
   .button-primary:hover {
-    background: #cfdbc1;
+    background: var(--accent-hover);
     color: var(--accent-ink)
   }
 }
@@ -330,6 +343,7 @@ summary:active {
 }
 
 .hero-aside {
+  color: var(--text);
   min-width: 0;
   padding: 24px;
   background: var(--surface);
@@ -337,34 +351,12 @@ summary:active {
   border-radius: 12px
 }
 
-.workbench-top {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 12px;
-  line-height: 16px;
-  color: var(--muted)
-}
-
-.status-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--accent);
-  flex: none
-}
-
-.mini-label {
-  margin-left: auto;
-  color: var(--accent)
-}
-
 .workbench-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  margin-top: 24px;
+  margin-top: 0;
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
@@ -408,7 +400,7 @@ summary:active {
 .bot-screenshot {
   margin: 0;
   padding: 32px;
-  background: #272727;
+  background: var(--image-stage);
   align-self: stretch;
 }
 
@@ -449,14 +441,14 @@ summary:active {
   height: 16px;
 }
 
-.project-mobile {
+.project-mobile, .project-web {
   display: grid;
-  grid-template-columns: 1fr 1.25fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
   margin-top: 24px;
   background: var(--surface);
 }
 
-.project-mobile .project-body {
+.project-mobile .project-body, .project-web .project-body {
   padding: 40px;
   align-self: center;
 }
@@ -472,7 +464,7 @@ summary:active {
   justify-content: center;
   gap: 24px;
   padding: 32px;
-  background: #272727;
+  background: var(--image-stage);
   min-width: 0;
 }
 
@@ -535,10 +527,6 @@ summary:active {
   height: 16px
 }
 
-.dot-separator {
-  margin-inline: 8px
-}
-
 .section {
   padding-block: 96px;
   border-top: 1px solid var(--line)
@@ -558,10 +546,6 @@ summary:active {
   letter-spacing: -.04em
 }
 
-.heading-period {
-  color: var(--accent)
-}
-
 .section-heading>p {
   font-size: 14px;
   line-height: 20px;
@@ -577,7 +561,7 @@ summary:active {
 
 .project-featured {
   display: grid;
-  grid-template-columns: 1.25fr 1fr;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
   background: var(--surface)
 }
 
@@ -593,7 +577,7 @@ summary:active {
 
 .project-meta>span {
   margin-inline: 8px;
-  color: #818579
+  color: var(--meta-divider)
 }
 
 .project h3 {
@@ -646,11 +630,11 @@ summary:active {
 .tags li {
   padding: 4px 8px;
   background: var(--surface-hover);
-  border: 1px solid #42443e;
+  border: 1px solid var(--tag-border);
   border-radius: 4px;
   font-size: 12px;
   line-height: 16px;
-  color: #d4d8cc
+  color: var(--tag-text)
 }
 
 .project-details {
@@ -744,7 +728,7 @@ details[open]>summary .details-symbol::after {
 
 .about-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 96px
 }
 
@@ -837,7 +821,7 @@ details[open]>summary .details-symbol::after {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: 1fr 1.25fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr) minmax(0, 1fr);
   gap: 40px
 }
 
@@ -850,7 +834,7 @@ details[open]>summary .details-symbol::after {
 
 .contact-layout {
   display: grid;
-  grid-template-columns: 1.65fr 1fr;
+  grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
   gap: 96px;
   align-items: end
 }
@@ -946,7 +930,7 @@ details[open]>summary .details-symbol::after {
 @media(max-width:1100px) {
   .hero-layout {
     gap: 40px;
-    grid-template-columns: 1.5fr 1fr
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr)
   }
 
   .hero h1 {
@@ -982,7 +966,7 @@ details[open]>summary .details-symbol::after {
   .hero-layout {
     padding-top: 64px;
     padding-bottom: 48px;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 40px
   }
 
@@ -997,13 +981,9 @@ details[open]>summary .details-symbol::after {
   .hero-aside {
     max-width: none;
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: minmax(0, 1fr) auto;
     column-gap: 24px;
     align-items: start
-  }
-
-  .workbench-top {
-    grid-column: 1/-1
   }
 
   .workbench-title {
@@ -1047,7 +1027,7 @@ details[open]>summary .details-symbol::after {
   }
 
   .project-featured {
-    grid-template-columns: 1fr
+    grid-template-columns: minmax(0, 1fr)
   }
 
   .project-body {
@@ -1074,11 +1054,11 @@ details[open]>summary .details-symbol::after {
   }
 
   .skills-grid {
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr)
   }
 
   .contact-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 32px
   }
 
@@ -1191,11 +1171,11 @@ details[open]>summary .details-symbol::after {
     height: 176px;
   }
 
-  .project-mobile {
-    grid-template-columns: 1fr;
+  .project-mobile, .project-web {
+    grid-template-columns: minmax(0, 1fr);
   }
 
-  .project-mobile .project-body {
+  .project-mobile .project-body, .project-web .project-body {
     padding: 24px;
   }
 
@@ -1269,7 +1249,7 @@ details[open]>summary .details-symbol::after {
   }
 
   .about-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 40px
   }
 
@@ -1286,7 +1266,7 @@ details[open]>summary .details-symbol::after {
   }
 
   .skills-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 32px
   }
 
@@ -1376,3 +1356,16 @@ details[open]>summary .details-symbol::after {
     transition: none!important
   }
 }
+
+.experience-group { grid-column: 1 / -1; }
+.experience-group h3 { font-size: 24px; line-height: 32px; }
+.experience-list { margin-top: 24px; gap: 0; }
+.experience-list li { grid-template-columns: minmax(0, .8fr) minmax(0, 1.4fr) auto; gap: 24px; padding-block: 24px; border-bottom: 1px solid var(--line); align-items: start; }
+.experience-list .experience-role { font-size: 14px; line-height: 20px; font-weight: 600; }
+.experience-list .experience-company { font-size: 14px; line-height: 20px; color: var(--muted); }
+.experience-list .experience-period { font-size: 12px; line-height: 16px; color: var(--muted); }
+.details-body h4 { margin: 24px 0 8px; color: var(--text); font-size: 16px; line-height: 24px; font-weight: 600; }
+@media (max-width: 800px) { .experience-list li { grid-template-columns: minmax(0, .8fr) minmax(0, 1.3fr); } .experience-period { grid-column: 2; } }
+@media (max-width: 600px) { .experience-list li { grid-template-columns: minmax(0, 1fr); gap: 8px; } .experience-period { grid-column: 1; } }
+
+[hidden] { display: none !important; }

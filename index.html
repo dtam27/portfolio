@@ -7,13 +7,13 @@
     <meta name="theme-color" content="#000000" />
     <meta name="color-scheme" content="dark" />
     <meta property="og:title" content="Daniel Tam | Software engineering portfolio" />
-    <meta property="og:description" content="Mobile experiences. Backend foundations. Selected software projects by Daniel Tam, CS + Economics at the University of Maryland." />
+    <meta property="og:description" content="Software engineering projects by Daniel Tam, a Computer Science and Economics student at the University of Maryland." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://dtam27.github.io/portfolio/" />
     <meta property="og:image" content="https://dtam27.github.io/portfolio/assets/social-preview.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Daniel Tam. Mobile experiences. Backend foundations. CS + Economics at the University of Maryland." />
+    <meta property="og:image:alt" content="Daniel Tam. Computer Science and Economics at the University of Maryland. Software engineering portfolio." />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://dtam27.github.io/portfolio/" />
     <title>Daniel Tam | Software engineering portfolio</title>
@@ -41,40 +41,35 @@
       <section class="hero" id="top" aria-labelledby="hero-heading">
         <div class="wrap hero-layout">
           <div class="hero-copy">
-            <h1 id="hero-heading">Mobile experiences.<br /><span>Backend foundations.</span></h1>
-            <p class="hero-lede">I’m Daniel, a CS + Economics student at the University of Maryland. I build iOS apps with SwiftUI and backend systems with Python.</p>
+            <h1 id="hero-heading">Daniel Tam</h1>
+            <p class="hero-lede">Computer Science and Economics student building iOS apps and Python backends.</p>
             <a class="button button-primary" href="#projects">Explore my work <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14m-6-6 6 6 6-6" /></svg></a>
             <p class="hero-note">Seeking software engineering internships</p>
           </div>
           <aside class="hero-aside" aria-label="Current project">
-            <div class="workbench-top">
-              <span class="status-dot" aria-hidden="true"></span>
-              <span>Currently building</span>
-              <span class="mini-label">iOS</span>
-            </div>
             <a class="workbench-title" href="#group-think">Group Think <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10" /></svg></a>
             <p>A collaborative take on screen time.</p>
             <a class="hero-project-image" href="#group-think" aria-label="See Group Think project and screenshots"><img src="assets/projects/group-think-study-hall.png" width="1179" height="2556" fetchpriority="high" alt="Group Think study hall showing an active focus session and the focus roster." /></a>
-            <p class="workbench-caption">An active study hall in Group Think</p>
+            <p class="workbench-caption">An active study hall. iOS app in development.</p>
             <a class="text-link" href="#group-think">Explore the project <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" /></svg></a>
           </aside>
         </div>
         <div class="wrap hero-foot">
           <span>College Park, Maryland</span>
-          <span>University of Maryland <span class="dot-separator" aria-hidden="true">·</span> Class of 2027</span>
+          <span>University of Maryland, Class of 2027</span>
           <a href="https://github.com/dtam27" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10" /></svg></a>
         </div>
       </section>
       <section class="section projects-section" id="projects" aria-labelledby="projects-heading">
         <div class="wrap">
           <div class="section-heading">
-            <h2 id="projects-heading">Selected work<span class="heading-period">.</span></h2>
+            <h2 id="projects-heading">Selected work</h2>
             <p>Mobile, backend, and the web.</p>
           </div>
           <article class="project project-featured" id="discord-platform" aria-labelledby="discord-title">
             <div class="project-copy">
-              <p class="project-meta">Backend &amp; security <span aria-hidden="true">/</span> Jan 2026–present</p>
               <h3 id="discord-title">Discord bot platform</h3>
+              <p class="project-meta">Backend &amp; security <span aria-hidden="true">/</span> January 2026 to present</p>
               <p class="project-description">Python tooling for Discord communities, with marketplace and support workflows backed by authentication, permissions, and persistent data storage.</p>
               <p class="project-ownership"><strong>My role</strong> Built the bot end to end.</p>
               <p class="project-evidence">Built for communities totaling approximately <strong>22,000 members</strong> across 13 servers.</p>
@@ -89,6 +84,8 @@
                 <div class="details-body">
                   <p>The platform combines Python and the Discord API with FastAPI services. SQLite and SQLAlchemy handle persistence, with Alembic for database migrations.</p>
                   <p>Security work includes OAuth2 and JWT authentication, role based access control, and protections against destructive server actions.</p>
+                  <h4>Configurable permissions across servers</h4>
+                  <p>Different servers needed different staff roles without duplicating authorization logic. I centralized named permissions, stored role mappings per server, and reused shared checks across command modules. Configuration changes invalidate the cached mappings.</p>
                   <p>Used jishaku for live debugging and hot reloading during development and maintenance.</p>
                   <p class="scope-note">Community reach includes one server with 19,000 members, one with 700, and 11 additional servers. These figures describe combined membership.</p>
                 </div>
@@ -98,8 +95,8 @@
           </article>
             <article class="project project-mobile" id="group-think" aria-labelledby="group-think-title">
               <div class="project-body">
-                <p class="project-meta">iOS <span aria-hidden="true">/</span> Jun 2026–present</p>
                 <h3 id="group-think-title">Group Think</h3>
+              <p class="project-meta">iOS <span aria-hidden="true">/</span> June 2026 to present</p>
                 <p class="project-description">A collaborative iOS app for shared study halls and group screen time limits. Built in SwiftUI with Firebase authentication and realtime sync, alongside one collaborator.</p>
                 <p class="project-ownership"><strong>My role</strong> UI and frontend, Firebase integration, and backend contributions.</p>
                 <ul class="tags" aria-label="Core technologies">
@@ -111,6 +108,8 @@
                   <summary>Inside the build <span class="details-symbol" aria-hidden="true"></span></summary>
                   <div class="details-body">
                     <p>Group Think manages and monitors group screen time limits. SwiftUI provides the native interface, while Firebase supports sign in and realtime state synchronization across devices.</p>
+                    <h4>Keeping session totals current</h4>
+                    <p>A summary could open before Firestore finished crediting a session, leaving the displayed total stale. I worked on a live profile listener so the summary reacts as the updated data arrives, with cleanup when the listener ends.</p>
                     <p class="scope-note">An ongoing project, developed with one collaborator since June 2026.</p>
                   </div>
                 </details>
@@ -120,12 +119,12 @@
             </article>
             <article class="project project-web" id="touch-by-touch" aria-labelledby="fencing-title">
               <div class="project-body">
-                <p class="project-meta">Web <span aria-hidden="true">/</span> Jan 2022–Mar 2023</p>
                 <h3 id="fencing-title">Touch by Touch Fencing</h3>
+              <p class="project-meta">Web <span aria-hidden="true">/</span> January 2022 to March 2023</p>
                 <p class="project-description">Co-developed a JavaScript and HTML web and mobile application deployed to more than 135 participating schools.</p>
                 <ul class="tags" aria-label="Core technologies">
                   <li>JavaScript</li>
-                  <li>HTML / CSS</li>
+                  <li>HTML and CSS</li>
                   <li>Responsive web</li>
                 </ul>
                 <details class="project-details">
@@ -136,6 +135,10 @@
                   </div>
                 </details>
               </div>
+              <div class="app-gallery fencing-gallery">
+                <figure><a href="assets/projects/touch-by-touch-scoring.png" target="_blank" rel="noopener noreferrer" aria-label="Open full Touch by Touch bout scoring screenshot"><img src="assets/projects/touch-by-touch-scoring.png" width="1179" height="2556" loading="lazy" alt="Touch by Touch bout view with red and green score panels, scoring status, and a completed bout event log." /></a><figcaption>Bout scoring and event history</figcaption></figure>
+                <figure><a href="assets/projects/touch-by-touch-school-stats.png" target="_blank" rel="noopener noreferrer" aria-label="Open full Touch by Touch school statistics screenshot"><img src="assets/projects/touch-by-touch-school-stats.png" width="1179" height="2556" loading="lazy" alt="Touch by Touch school profile showing a team record, results by fencing weapon, and individual fencer results." /></a><figcaption>Team and individual statistics</figcaption></figure>
+              </div>
             </article>
           <p class="projects-footer">More of my code lives on <a class="text-link" href="https://github.com/dtam27" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10" /></svg></a></p>
         </div>
@@ -143,55 +146,55 @@
       <section class="section about-section" id="about" aria-labelledby="about-heading">
         <div class="wrap about-layout">
           <div class="about-intro">
-            <h2 id="about-heading">A builder.<br />A bigger picture.</h2>
-            <p>I study Computer Science and Economics, and build practical software across mobile and backend.</p>
-            <p>At Maryland, that means developing apps, studying cybersecurity, and making time to lead student communities.</p>
+            <h2 id="about-heading">About me</h2>
+            <p>I study Computer Science and Economics at the University of Maryland, with a focus on cybersecurity.</p>
+            <p>Outside coursework, I build mobile and backend software, teach app development, and lead student communities.</p>
             <a class="text-link" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Read my résumé <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10" /></svg></a>
           </div>
           <div class="about-facts">
             <div class="fact-group">
               <h3>University of Maryland</h3>
-              <p>B.S. Computer Science, Cybersecurity track<br />B.S. Economics</p>
-              <p class="fact-meta">Expected December 2027 <span aria-hidden="true">·</span> GPA 3.50</p>
-              <p class="fact-meta">Semester Academic Honors: Fall 2025, Spring 2026<br />FIRE completed</p>
-            </div>
-            <div class="fact-group">
-              <h3>Beyond the code</h3>
-              <ul class="experience-list">
-                <li><span>President</span><span>Asian American InterVarsity · 120 members</span></li>
-                <li><span>Chapter founder &amp; president</span><span>CS Base UMD · 15 volunteers serving 100 students</span></li>
-                <li><span>Recruitment ambassador</span><span>CMNS</span></li>
-                <li><span>Student Police Auxiliary</span></li>
-              </ul>
+              <p>Bachelor of Science in Computer Science, cybersecurity track<br />Bachelor of Science in Economics</p>
+              <p class="fact-meta">Expected December 2027<br />Grade point average: 3.50</p>
+              <p class="fact-meta">Semester Academic Honors: Fall 2025, Spring 2026<br />Completed the First-Year Innovation &amp; Research Experience program</p>
             </div>
             <div class="fact-group awards-group">
-              <h3>Certifications &amp; awards</h3>
-              <p>GIAC Cloud Security Essentials (GCLD)<br />GIAC Foundational Cybersecurity Technologies (GFACT)<br />Eagle Scout, 2021</p>
+              <h3>Certifications and awards</h3>
+              <p>Cloud Security Essentials<br />Foundational Cybersecurity Technologies</p>
+              <p class="fact-meta">Issued by GIAC Certifications (Global Information Assurance Certification).</p>
+              <p>Eagle Scout, 2021</p>
             </div>
-            <details class="coursework">
-              <summary>Relevant coursework <span class="details-symbol" aria-hidden="true"></span></summary>
-              <p>Programming Language Technologies &amp; Paradigms · Design &amp; Analysis of Computer Algorithms · Economics of Big Data · Econometrics · Computer and Network Security · Cryptography</p>
-            </details>
+            <details class="coursework"><summary>Relevant coursework <span class="details-symbol" aria-hidden="true"></span></summary><p>Programming Language Technologies &amp; Paradigms, Design &amp; Analysis of Computer Algorithms, Economics of Big Data, Econometrics, Computer and Network Security, Cryptography</p></details>
+          </div>
+          <div class="experience-group">
+            <h3>Experience and leadership</h3>
+            <ul class="experience-list">
+              <li><span class="experience-role">Recruitment ambassador</span><span class="experience-company">College of Computer, Mathematical, and Natural Sciences<br />University of Maryland</span><span class="experience-period">September 2026 to present</span></li>
+              <li><span class="experience-role">President</span><span class="experience-company">Asian American InterVarsity<br />University of Maryland, chapter with 120 members</span><span class="experience-period">March 2026 to present</span></li>
+              <li><span class="experience-role">Chapter founder and president</span><span class="experience-company">CS Base, University of Maryland chapter<br />Computer science education nonprofit, 15 volunteers teaching 100 students</span><span class="experience-period">November 2025 to present</span></li>
+              <li><span class="experience-role">Student Police Auxiliary</span><span class="experience-company">University of Maryland Police Department</span><span class="experience-period">December 2024 to September 2025</span></li>
+              <li><span class="experience-role">Developer and tester</span><span class="experience-company">Touch by Touch Fencing</span><span class="experience-period">January 2022 to March 2023</span></li>
+            </ul>
           </div>
         </div>
       </section>
       <section class="section skills-section" id="skills" aria-labelledby="skills-heading">
         <div class="wrap">
           <div class="section-heading">
-            <h2 id="skills-heading">What I build with<span class="heading-period">.</span></h2>
+            <h2 id="skills-heading">Technical skills</h2>
           </div>
           <div class="skills-grid">
             <div class="skill-group">
               <h3>Mobile &amp; frontend</h3>
-              <p>Swift · SwiftUI · Xcode<br />JavaScript · HTML · CSS</p>
+              <p>Swift, SwiftUI, Xcode<br />JavaScript, HTML, CSS</p>
             </div>
             <div class="skill-group">
               <h3>Backend &amp; data</h3>
-              <p>Python · FastAPI · SQL · SQLite<br />SQLAlchemy · Alembic · Firebase</p>
+              <p>Python, FastAPI, SQL, SQLite<br />SQLAlchemy, Alembic, Firebase</p>
             </div>
             <div class="skill-group">
               <h3>Security &amp; tools</h3>
-              <p>OAuth2 · JWT · RBAC · C<br />Git · Discord API · Unix / Linux<br />Network security · Cryptography</p>
+              <p>OAuth2, JWT, RBAC, C<br />Git, Discord API, Unix / Linux<br />Network security, Cryptography</p>
             </div>
           </div>
         </div>
@@ -199,7 +202,7 @@
       <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
         <div class="wrap contact-layout">
           <div>
-            <h2 id="contact-heading">Let’s build<br />something useful<span class="heading-period">.</span></h2>
+            <h2 id="contact-heading">Contact</h2>
             <p>I’m looking for software engineering internships and opportunities to contribute to a team.</p>
             <a class="contact-email" href="mailto:dtam1@terpmail.umd.edu">dtam1@terpmail.umd.edu <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10" /></svg></a>
           </div>
@@ -220,7 +223,7 @@
     <footer class="site-footer">
       <div class="wrap footer-inner">
         <p>© <span id="year">2026</span> Daniel Tam</p>
-        <span>Built with purpose, in College Park.</span>
+        <span>College Park, Maryland</span>
         <a class="text-link" href="#top">Back to top <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 19V5m-6 6 6-6 6 6" /></svg></a>
       </div>
     </footer>

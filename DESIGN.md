@@ -14,6 +14,8 @@ colors:
   line: "#313131"
   tag-border: "#42443e"
   tag-text: "#d4d8cc"
+  meta-divider: "#818579"
+  scrollbar: "#595e52"
 typography:
   display:
     fontFamily: "Manrope, system-ui, sans-serif"
@@ -106,17 +108,18 @@ components:
     height: "80px"
   project-details:
     textColor: "{colors.text}"
+  experience-row:
+    textColor: "{colors.text}"
+    padding: "24px 0"
 ---
 
 # Design System: Daniel Tam Portfolio
 
 ## Overview
 
-**Creative North Star: "The Software Workbench"**
+The portfolio retains black and dark neutral surfaces, warm light text, and a muted sage accent. Manrope carries every text role. Large headings, compact metadata, and readable descriptions let visitors scan Daniel's work and qualifications without decorative copy.
 
-This phrase describes the implemented portfolio: a quiet, practical setting for real software work. The retained black and dark neutral surfaces, warm light text, and muted sage accent give the site a measured, technical character. Manrope carries every text role, and the contrast between large headings and compact project metadata creates hierarchy without visual noise.
-
-The interface is spacious around major sections and denser within project evidence. Screenshots supply the visual specificity; borders, restrained corners, and tonal layers organize them. The workbench metaphor records the existing refinement rather than introducing a replacement visual identity. Keep the static HTML, CSS, and JavaScript system straightforward to maintain on GitHub Pages.
+Major sections are spacious; project details are more compact. Real screenshots provide visual evidence, while thin borders, modest corners, and tonal surfaces organize the page. Headings use direct labels such as “Daniel Tam,” “About me,” “Technical skills,” and “Contact.” Keep the static HTML, CSS, and JavaScript system straightforward to maintain on GitHub Pages.
 
 **Key Characteristics:**
 
@@ -132,7 +135,7 @@ The palette is almost monochrome, with warm light text and sage reserved for emp
 
 ### Primary
 
-- **Quiet Sage** (`accent`): primary action fill, the monogram, section punctuation, selected metrics, text links, disclosure symbols, and keyboard focus.
+- **Quiet Sage** (`accent`): primary action fill, the monogram, selected metrics, text links, disclosure symbols, and keyboard focus.
 - **Light Sage** (`accent-hover`): the primary action's pointer hover fill.
 - **Deep Sage Ink** (`accent-ink`): readable dark text on sage fills and selected text.
 
@@ -147,8 +150,10 @@ The palette is almost monochrome, with warm light text and sage reserved for emp
 - **Graphite Rule** (`line`): panel outlines, section dividers, navigation boundaries, and outlined controls.
 - **Olive Graphite** (`tag-border`): technology tag borders.
 - **Pale Olive Gray** (`tag-text`): technology tag text.
+- **Muted Olive Divider** (`meta-divider`): the separator between a project category and its date.
+- **Olive Gray Scrollbar** (`scrollbar`): the scrollbar thumb against Black Ground.
 
-**The Single Accent Rule.** Use sage for intentional emphasis and interaction; let the neutral surfaces carry the composition.
+Use sage for intentional emphasis and interaction; let the neutral surfaces carry the composition.
 
 ## Typography
 
@@ -160,14 +165,14 @@ The palette is almost monochrome, with warm light text and sage reserved for emp
 
 ### Hierarchy
 
-- **Display:** the frontmatter display role sets the desktop hero and contact scale. The hero uses a muted second line. It becomes (48px) at the intermediate desktop breakpoint, returns to the display size for the single-column tablet layout, and steps to (36px/40px) on phones and (30px/36px) at the narrowest breakpoint.
+- **Display:** the frontmatter display role sets the desktop hero and contact scale. The hero displays Daniel’s name. It becomes (48px) at the intermediate desktop breakpoint, returns to the display size for the single-column tablet layout, and steps to (36px/40px) on phones and (30px/36px) at the narrowest breakpoint.
 - **Headline:** the frontmatter headline role anchors major sections. Phone section headings use (36px/40px); the compact skills heading uses (36px/40px) on desktop and (30px/36px) on phones.
 - **Title:** the frontmatter title role identifies projects. At tablet widths and below, project titles use (24px/32px).
 - **Body:** the body role carries ordinary copy; descriptions generally stop at (65ch). The body-large role is used for the hero, selected evidence, About introduction, and contact copy. Introductory copy returns to the body scale on phones.
 - **Label:** the label role serves dates, project categories, captions, tags, and the footer. Keep sentence case and preserve the light regular weight.
 - **Action:** the action role supports inline links. Main actions use the body size with semibold weight. Navigation uses a medium weight (500), distinct from the semibold inline actions.
 
-**The One Typeface Rule.** Use the local Manrope family throughout; establish hierarchy through size, weight, spacing, and contrast.
+Use the local Manrope family throughout; establish hierarchy through size, weight, spacing, and contrast.
 
 ## Layout
 
@@ -175,21 +180,23 @@ The centered content container has a maximum width (1184px). Desktop gutters are
 
 Large sections use the spacing scale's section-large interval on desktop and section-medium on smaller screens. Panels use panel or large padding on desktop, medium padding on phones, and small padding in compact text panels below the narrow breakpoint. Repeated small gaps, label offsets, and chips follow the same scale rather than arbitrary per-element spacing.
 
-Wide layouts combine text and project evidence in asymmetric grids. The hero uses a (1.65:1) split and the featured backend project a (1.25:1) split. Project panels stack as the available space narrows. The iOS panel keeps its two portrait screenshots side by side within the media stage, preserving each full image's aspect ratio. The full app limit screen is a user-confirmed presentation choice.
+Wide layouts combine text and project evidence in asymmetric grids. The hero uses a (1.65:1) split and the featured backend project a (1.25:1) split. Project panels stack as the available space narrows. The iOS and fencing panels share the same gallery pattern: two portrait screenshots side by side within the media stage, preserving each full image's aspect ratio. The full iOS app limit screen is a user-confirmed presentation choice. The fencing gallery contains the actual bout-scoring and school-statistics captures.
 
-Implemented responsive boundaries are (1100px), (800px), (600px), and (360px), using max-width queries. At the tablet breakpoint, the hero and backend project become single column. At the phone breakpoint, navigation becomes a disclosure menu when JavaScript is available, the iOS panel and About become single column, and skill groups stack. With JavaScript unavailable, all navigation links remain visible and wrap within the header.
+Implemented responsive boundaries are (1100px), (800px), (600px), and (360px), using max-width queries. At the tablet breakpoint, the hero and backend project become single column. At the phone breakpoint, navigation becomes a disclosure menu when JavaScript is available, the iOS and fencing panels and About become single column, and skill groups stack. With JavaScript unavailable, all navigation links remain visible and wrap within the header.
 
-Browser checks supplied for this refinement covered widths (320px), (390px), (768px), (1280px), and (1440px), with no horizontal overflow or console errors and successful font/image loading. These are desktop browser viewport checks; hardware touch behavior has not been tested. Independent review is recorded separately.
+The About introduction and education occupy two columns on wide screens. Five experience rows span the full content width below them. Each row separates role, full organization name, and dates; at tablet widths the date moves below the organization, and on phones all three fields stack.
+
+The latest CUA browser checks covered widths (320px), (375px), (640px), (768px), (1024px), (1280px), (1440px), and (1920px), with no horizontal overflow. These are desktop browser viewport checks; hardware touch behavior has not been tested. Hallmark’s Puppeteer browser-renderer check was unavailable. The independent Hallmark review returned ship with no material finish findings within the reviewed polish scope.
 
 ## Elevation & Depth
 
 The system uses no box shadows. Depth comes from Black Ground, Charcoal Panel, and Screenshot Charcoal, separated by thin Graphite Rules. The sticky header has an opaque background. There is no blur layer, floating panel treatment, or ornamental glow in the implemented system.
 
-**The Tonal Depth Rule.** Separate regions with the established neutral surfaces and borders; keep their resting appearance flat.
+Separate regions with the established neutral surfaces and borders; keep their resting appearance flat.
 
 ## Shapes
 
-Controls and tags use the compact control radius. Screenshot crops use the media radius, bordered project panels use the panel radius, and full portrait screenshot edges use the phone radius. Thin borders define structure. The only recurring circle is the small current-project status dot. Project panels clip their contents at the outer corner; full phone captures retain their original aspect ratios and visible content.
+Controls and tags use the compact control radius. Screenshot crops use the media radius, bordered project panels use the panel radius, and full portrait screenshot edges use the phone radius. Thin borders define structure. Project panels clip their contents at the outer corner; full phone captures retain their original aspect ratios and visible content.
 
 Inline arrows are small stroke SVGs, normally (20px) with a stroke width (1.5). Caption arrows use (16px). Keep them aligned with text and inherit the surrounding color.
 
@@ -207,7 +214,7 @@ Technology tags are compact, noninteractive labels. They use Raised Charcoal, Ol
 
 ### Cards / Containers
 
-Project panels are calm frames for evidence, using Charcoal Panel, a Graphite Rule, and the panel radius. Text padding reduces with screen width. Screenshot stages use Screenshot Charcoal. The current-project panel uses the same frame with more compact padding, a sage status dot, a project title, a factual screenshot preview, and a text link.
+Project panels are calm frames for evidence, using Charcoal Panel, a Graphite Rule, and the panel radius. Text padding reduces with screen width. Screenshot stages use Screenshot Charcoal. The current-project panel uses the same frame with more compact padding, a project title, a factual screenshot preview, and a text link.
 
 ### Navigation
 
@@ -217,13 +224,17 @@ The mobile menu toggle is a bordered square (48px) with two thin bars that rotat
 
 ### Project disclosures
 
-Use native `details` and `summary` for technical explanations and coursework. Summaries have a minimum height (48px), semibold labels, and a sage plus/minus indicator. The vertical line rotates away over (180ms) when open. Summaries also turn sage while pressed. Copy remains in ordinary document flow; preserve keyboard activation and native expanded-state semantics.
+Use native `details` and `summary` for technical explanations and coursework. Summaries have a minimum height (48px), semibold labels, and a sage plus/minus indicator. The vertical line rotates away over (180ms) when open. Summaries also turn sage while pressed. Copy remains in ordinary document flow; preserve keyboard activation and native expanded-state semantics. Technical subheadings use semibold body-size text to separate a specific engineering problem from the general architecture description.
 
 ### Project screenshots
 
-Use the supplied captures as evidence. The hero preview and backend preview may crop for composition, with explicit links to the project or full screenshot. The iOS gallery displays both complete phone captures and descriptive captions. Avoid fabricated interfaces or replacing the full app limit screenshot with the previously discussed crop.
+Use the supplied captures as evidence. The hero preview and backend preview may crop for composition, with explicit links to the project or full screenshot. The iOS gallery displays both complete phone captures and descriptive captions. The fencing project reuses this gallery with two actual captures: bout scoring and event history, followed by team and individual statistics. Avoid fabricated interfaces or replacing the full app limit screenshot with the previously discussed crop.
 
-**The Optional Motion Rule.** Content is visible at rest. Reduced motion disables transitions and smooth scrolling; interaction states remain legible without animation. The shared easing is `cubic-bezier(.32,.72,0,1)`.
+### Experience rows
+
+Five rows show the role, complete organization name, and date range without badges or abbreviations. A thin bottom border and generous vertical padding separate the entries. Roles use semibold text, organizations use muted body text, and dates use the smaller label scale. Preserve the responsive column changes described in Layout.
+
+Content is visible at rest. Reduced motion disables transitions and smooth scrolling; interaction states remain legible without animation. The shared easing is `cubic-bezier(.32,.72,0,1)`.
 
 ## Do's and Don'ts
 
@@ -231,6 +242,7 @@ Use the supplied captures as evidence. The hero preview and backend preview may 
 
 - **Do** preserve the dark neutral and sage identity when extending the site.
 - **Do** use the local Manrope family and the established text hierarchy.
+- **Do** use direct headings and full qualification, organization, and date wording.
 - **Do** use real project screenshots with meaningful alternative text and captions.
 - **Do** keep full phone captures intact in the iOS gallery.
 - **Do** retain visible keyboard focus, native disclosures, and visible navigation without JavaScript.
