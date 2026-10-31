@@ -1,45 +1,49 @@
 # Daniel Tam — Portfolio
 
-Personal portfolio site (static HTML/CSS/JS) for GitHub Pages.
+Static HTML, CSS, and JavaScript portfolio for software engineering internships, hosted through GitHub Pages.
 
-**Live URL (after Pages is enabled):** https://dtam27.github.io/portfolio/
+Live site: https://dtam27.github.io/portfolio/
 
 ## Local preview
 
+No package installation or build step is required. From the repository root, run Python's standard-library server:
+
 ```bash
-cd portfolio
 python3 -m http.server 8080
 ```
 
-Open http://localhost:8080
+Open http://localhost:8080/. Stop the server with Ctrl+C.
 
-Or just open `index.html` in a browser.
+## Page structure
 
-## Enable GitHub Pages (GET-10)
+1. Hero: introduction, mobile and backend focus, and a GroupThink screenshot.
+2. Selected work: Discord bots, GroupThink, and Touch by Touch Fencing.
+3. About: education, leadership, and certifications.
+4. Skills: grouped technical capabilities.
+5. Contact: email, phone, professional links, and the current PDF résumé.
 
-1. Open https://github.com/dtam27/portfolio/settings/pages
-2. Under **Build and deployment** → **Source**, choose **Deploy from a branch**
-3. Branch: `main` · Folder: `/ (root)`
-4. Save — site should appear at https://dtam27.github.io/portfolio/ in a minute or two
-
-`.nojekyll` is already in the repo so GitHub won’t process the site with Jekyll.
-
-## Assets to add (GET-13)
-
-See `assets/README.md`. Drop in:
-
-- `assets/headshot.jpg`
-- `assets/resume.pdf`
-- Group Think UI screenshots under `assets/projects/`
+The page uses a self-hosted Manrope font and user-supplied screenshots. Résumé links open `assets/resume.pdf` directly. The older DOCX remains a legacy asset and is not linked.
 
 ## Project layout
 
-- `index.html` — Hero, About, Skills, Projects, Contact
-- `styles.css` — palette/fonts as CSS variables + mobile media queries
-- `app.js` — mobile nav + smooth scroll
-- `docs/wireframe.md` — low-fi layout sketch
-- `docs/mobile-checklist.md` — iPhone QA checklist
+- `index.html`: page content, screenshot captions, navigation, and metadata.
+- `styles.css`: design tokens, self-hosted font, responsive layout, and interaction styles.
+- `app.js`: mobile navigation, keyboard dismissal, section navigation state, and footer year.
+- `assets/projects/`: Discord and GroupThink screenshots.
+- `assets/README.md`: asset provenance and font license information.
+- `docs/content-guide.md`: received content and optional details for stronger project case studies.
+- `docs/social-preview.html`: editable source for `assets/social-preview.jpg`.
+- `docs/mobile-checklist.md`: checklist for phone verification.
+- `PRODUCT.md`: audience, confirmed facts, and content constraints.
 
-## Lighthouse (GET-23)
+## GitHub Pages
 
-In Chrome DevTools → Lighthouse → analyze the Pages URL (or local server). Aim for strong Performance, Accessibility, and SEO.
+Keep branch deployment set to `main` and `/ (root)` in the repository's Pages settings. Publish the static files together, including `assets/`. `.nojekyll` prevents Jekyll processing.
+
+The page and its relative asset links work under the `/portfolio/` path. Social metadata points to the public GitHub Pages URL.
+
+## Verification status
+
+Verified browser layouts at 320, 390, 768, 1280, and 1440 CSS pixels: no horizontal overflow, all screenshots and the self-hosted font loaded, and no console warnings or errors. Verified keyboard menu activation, Escape dismissal and focus return, anchor focus, and all native disclosures with Enter or Space. Local resource and JavaScript syntax checks pass. Text contrast was measured against all page surfaces. An independent source and screenshot review returned ship with no material blockers.
+
+Physical-phone touch behavior, a real screen reader walkthrough, and browser text zoom remain unverified. The bundled mobile checklist supports device review. Lighthouse can provide a separate performance, accessibility, and SEO check; no score is claimed here.

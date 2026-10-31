@@ -1,9 +1,15 @@
-# Assets
+# Assets and provenance
 
-Drop production assets here:
+The portfolio uses actual screenshots and the latest résumé supplied by Daniel. No placeholder portrait is required.
 
-- `headshot.jpg` — professional headshot (used in the hero)
-- `resume.pdf` — latest résumé (Resume CTA)
-- `projects/group-think-1.png` (and more) — clean UI screenshots of the Group Think iOS app
+- `resume.pdf`: latest user-supplied résumé, linked directly from the site.
+- `resume.docx`: older résumé retained as a legacy file; not linked as a current download.
+- `projects/discord-marketplace.png`: user-supplied Discord marketplace and support workflow capture.
+- `projects/group-think-study-hall.png`: user-supplied GroupThink Study Hall capture showing a shared focus session.
+- `projects/group-think-app-limit.png`: user-supplied full phone capture showing the iOS Time Allowance notice. The user chose to show the complete screenshot beside Study Hall.
+- `manrope-latin.woff2`: self-hosted Manrope variable font, Latin subset, weights 400–700, sourced from Google Fonts.
+- `Manrope-OFL.txt`: Manrope's SIL Open Font License 1.1 and copyright notice. Keep it with the distributed font; the font project is https://github.com/googlefonts/manrope.
+- `favicon.svg`: site-authored Daniel Tam monogram favicon.
+- `social-preview.jpg`: 1200 × 630 social sharing image derived from the site's typography and copy. Its editable HTML source is `docs/social-preview.html` in the repository root.
 
-Until these exist, the site shows a text fallback for the portrait and the Resume button may 404.
+Keep screenshots faithful to the supplied product UI. Maintain descriptive alternative text and captions in `index.html` when replacing an image.

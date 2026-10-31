@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-31T03:28:03.868503+00:00",
+  "title": "Design System: Daniel Tam Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "accent": {
+        "role": "primary",
+        "displayName": "Quiet Sage",
+        "tonalRamp": [
+          "oklch(15% 0.045 125)",
+          "oklch(26% 0.045 125)",
+          "oklch(38% 0.045 125)",
+          "oklch(49% 0.045 125)",
+          "oklch(61% 0.045 125)",
+          "oklch(72% 0.045 125)",
+          "oklch(84% 0.045 125)",
+          "oklch(95% 0.045 125)"
+        ]
+      },
+      "accent-hover": {
+        "role": "primary",
+        "displayName": "Light Sage",
+        "tonalRamp": [
+          "oklch(15% 0.038 125)",
+          "oklch(26% 0.038 125)",
+          "oklch(38% 0.038 125)",
+          "oklch(49% 0.038 125)",
+          "oklch(61% 0.038 125)",
+          "oklch(72% 0.038 125)",
+          "oklch(84% 0.038 125)",
+          "oklch(95% 0.038 125)"
+        ]
+      },
+      "accent-ink": {
+        "role": "primary",
+        "displayName": "Deep Sage Ink",
+        "tonalRamp": [
+          "oklch(15% 0.031 132)",
+          "oklch(26% 0.031 132)",
+          "oklch(38% 0.031 132)",
+          "oklch(49% 0.031 132)",
+          "oklch(61% 0.031 132)",
+          "oklch(72% 0.031 132)",
+          "oklch(84% 0.031 132)",
+          "oklch(95% 0.031 132)"
+        ]
+      },
+      "bg": {
+        "role": "neutral",
+        "displayName": "Black Ground",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Charcoal Panel",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "surface-hover": {
+        "role": "neutral",
+        "displayName": "Raised Charcoal",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "image-stage": {
+        "role": "neutral",
+        "displayName": "Screenshot Charcoal",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Warm White",
+        "tonalRamp": [
+          "oklch(15% 0.007 108)",
+          "oklch(26% 0.007 108)",
+          "oklch(38% 0.007 108)",
+          "oklch(49% 0.007 108)",
+          "oklch(61% 0.007 108)",
+          "oklch(72% 0.007 108)",
+          "oklch(84% 0.007 108)",
+          "oklch(95% 0.007 108)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Warm Gray",
+        "tonalRamp": [
+          "oklch(15% 0.011 108)",
+          "oklch(26% 0.011 108)",
+          "oklch(38% 0.011 108)",
+          "oklch(49% 0.011 108)",
+          "oklch(61% 0.011 108)",
+          "oklch(72% 0.011 108)",
+          "oklch(84% 0.011 108)",
+          "oklch(95% 0.011 108)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Graphite Rule",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "tag-border": {
+        "role": "neutral",
+        "displayName": "Olive Graphite",
+        "tonalRamp": [
+          "oklch(15% 0.01 120)",
+          "oklch(26% 0.01 120)",
+          "oklch(38% 0.01 120)",
+          "oklch(49% 0.01 120)",
+          "oklch(61% 0.01 120)",
+          "oklch(72% 0.01 120)",
+          "oklch(84% 0.01 120)",
+          "oklch(95% 0.01 120)"
+        ]
+      },
+      "tag-text": {
+        "role": "neutral",
+        "displayName": "Pale Olive Gray",
+        "tonalRamp": [
+          "oklch(15% 0.017 120)",
+          "oklch(26% 0.017 120)",
+          "oklch(38% 0.017 120)",
+          "oklch(49% 0.017 120)",
+          "oklch(61% 0.017 120)",
+          "oklch(72% 0.017 120)",
+          "oklch(84% 0.017 120)",
+          "oklch(95% 0.017 120)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero and contact headlines on desktop; smaller responsive variants are documented in DESIGN.md."
+      },
+      "headline": {
+        "displayName": "Section headline",
+        "purpose": "Major section headings."
+      },
+      "title": {
+        "displayName": "Project title",
+        "purpose": "Project names inside bordered panels."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default reading copy and compact mobile introductions."
+      },
+      "body-large": {
+        "displayName": "Introductory body",
+        "purpose": "Hero, About, selected project evidence, and contact introduction."
+      },
+      "label": {
+        "displayName": "Metadata label",
+        "purpose": "Project categories, dates, captions, tags, and footer text."
+      },
+      "action": {
+        "displayName": "Inline action",
+        "purpose": "Semibold arrow-ended text links."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.32,.72,0,1)",
+        "purpose": "Shared easing for color and control-state transitions."
+      },
+      {
+        "name": "color-state",
+        "value": "240ms",
+        "purpose": "Link, button color, and button background transitions."
+      },
+      {
+        "name": "button-press",
+        "value": "120ms",
+        "purpose": "Primary button press response; the control moves down one pixel."
+      },
+      {
+        "name": "disclosure-symbol",
+        "value": "180ms",
+        "purpose": "Plus-to-minus indicator transition for native details."
+      },
+      {
+        "name": "menu-toggle",
+        "value": "200ms",
+        "purpose": "Mobile navigation bar-to-close-symbol transition."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "none",
+        "purpose": "Transitions, animations, and smooth scrolling are disabled when reduced motion is requested."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "intermediate-desktop",
+        "value": "1100px"
+      },
+      {
+        "name": "tablet",
+        "value": "800px"
+      },
+      {
+        "name": "phone",
+        "value": "600px"
+      },
+      {
+        "name": "narrow-phone",
+        "value": "360px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Compact sage action used to lead a visitor into the work.",
+      "html": "<a class=\"ds-button-primary\" href=\"#work\">Explore my work <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></a>",
+      "css": ".ds-button-primary{font-family:var(--font,Manrope,system-ui,sans-serif);display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:48px;padding:8px 12px;border:1px solid transparent;border-radius:4px;background:var(--accent,#b7c5a3);color:var(--accent-ink,#1b2616);font-size:16px;line-height:24px;font-weight:600;text-decoration:none;transition:background-color 240ms var(--ease,cubic-bezier(.32,.72,0,1)),color 240ms var(--ease,cubic-bezier(.32,.72,0,1)),transform 240ms var(--ease,cubic-bezier(.32,.72,0,1))}.ds-button-primary svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:none}@media(hover:hover) and (pointer:fine){.ds-button-primary:hover{background:#cfdbc1}}.ds-button-primary:focus-visible{outline:2px solid var(--accent,#b7c5a3);outline-offset:4px;border-radius:4px}.ds-button-primary:active{transform:translateY(1px);transition-duration:120ms}@media(prefers-reduced-motion:reduce){.ds-button-primary{transition:none}}"
+    },
+    {
+      "name": "Outlined résumé link",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Quiet secondary action for opening the current PDF résumé.",
+      "html": "<a class=\"ds-button-outline\" href=\"#resume\">Résumé <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></a>",
+      "css": ".ds-button-outline{font-family:var(--font,Manrope,system-ui,sans-serif);display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 16px;border:1px solid var(--line,#313131);border-radius:4px;color:var(--text,#f3f3ee);background:transparent;font-size:14px;line-height:24px;font-weight:500;text-decoration:none;transition:background-color 240ms var(--ease,cubic-bezier(.32,.72,0,1)),transform 240ms var(--ease,cubic-bezier(.32,.72,0,1))}.ds-button-outline svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:none}@media(hover:hover) and (pointer:fine){.ds-button-outline:hover{background:var(--surface,#181818)}}.ds-button-outline:focus-visible{outline:2px solid var(--accent,#b7c5a3);outline-offset:4px;border-radius:4px}.ds-button-outline:active{transform:translateY(1px)}@media(prefers-reduced-motion:reduce){.ds-button-outline{transition:none}}"
+    },
+    {
+      "name": "Sage text link",
+      "kind": "button",
+      "refersTo": "text-link",
+      "description": "Arrow-ended link for source code and project exploration.",
+      "html": "<a class=\"ds-text-link\" href=\"#source\">Explore the code <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></a>",
+      "css": ".ds-text-link{font-family:var(--font,Manrope,system-ui,sans-serif);display:inline-flex;align-items:center;gap:8px;min-height:48px;color:var(--accent,#b7c5a3);font-size:14px;line-height:24px;font-weight:600;text-decoration:none;transition:color 240ms var(--ease,cubic-bezier(.32,.72,0,1))}.ds-text-link svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:none}@media(hover:hover) and (pointer:fine){.ds-text-link:hover{color:var(--accent,#b7c5a3)}}.ds-text-link:focus-visible{outline:2px solid var(--accent,#b7c5a3);outline-offset:4px;border-radius:4px}.ds-text-link:active{transform:translateY(1px)}@media(prefers-reduced-motion:reduce){.ds-text-link{transition:none}}"
+    },
+    {
+      "name": "Primary navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "A compact desktop navigation row with a sage current-location rule.",
+      "html": "<nav class=\"ds-navigation\" aria-label=\"Primary preview\"><a href=\"#work\" aria-current=\"location\">Work</a><a href=\"#about\">About</a><a href=\"#contact\">Contact</a></nav>",
+      "css": ".ds-navigation{font-family:var(--font,Manrope,system-ui,sans-serif);display:flex;align-items:center;flex-wrap:wrap;gap:24px;background:var(--bg,#000000);padding:0 16px;border-bottom:1px solid var(--line,#313131);min-height:80px}.ds-navigation a{position:relative;display:inline-flex;align-items:center;min-height:48px;color:var(--muted,#b0b0a8);font-size:14px;line-height:24px;font-weight:500;text-decoration:none;transition:color 240ms var(--ease,cubic-bezier(.32,.72,0,1))}.ds-navigation a[aria-current=\"location\"]{color:var(--text,#f3f3ee)}.ds-navigation a[aria-current=\"location\"]::after{content:\"\";position:absolute;bottom:4px;left:0;right:0;height:2px;background:var(--accent,#b7c5a3)}@media(hover:hover) and (pointer:fine){.ds-navigation a:hover{color:var(--text,#f3f3ee)}}.ds-navigation a:focus-visible{outline:2px solid var(--accent,#b7c5a3);outline-offset:4px;border-radius:4px}.ds-navigation a:active{transform:translateY(1px)}@media(prefers-reduced-motion:reduce){.ds-navigation a{transition:none}}"
+    },
+    {
+      "name": "Technology tags",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "Noninteractive technology labels that wrap within a project.",
+      "html": "<ul class=\"ds-tags\" aria-label=\"Core technologies\"><li>Python</li><li>FastAPI</li><li>SQLAlchemy</li><li>OAuth2 / JWT</li></ul>",
+      "css": ".ds-tags{font-family:var(--font,Manrope,system-ui,sans-serif);display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}.ds-tags li{padding:4px 8px;background:var(--surface-hover,#1f1f1f);border:1px solid #42443e;border-radius:4px;color:#d4d8cc;font-size:12px;line-height:16px}"
+    },
+    {
+      "name": "Project panel",
+      "kind": "card",
+      "refersTo": "project-panel",
+      "description": "A flat bordered frame with project metadata, title, and contribution.",
+      "html": "<article class=\"ds-project\"><p class=\"ds-project-meta\">iOS / Jun 2026–present</p><h3>Group Think</h3><p class=\"ds-project-copy\">A collaborative iOS app for shared study halls and group screen time limits.</p><p class=\"ds-project-role\"><strong>My role</strong> UI and frontend, Firebase integration, and backend contributions.</p></article>",
+      "css": ".ds-project{font-family:var(--font,Manrope,system-ui,sans-serif);max-width:560px;padding:40px;border:1px solid var(--line,#313131);border-radius:12px;background:var(--surface,#181818);color:var(--text,#f3f3ee);overflow:hidden}.ds-project p,.ds-project h3{margin:0}.ds-project-meta{font-size:12px;line-height:16px;color:var(--muted,#b0b0a8)}.ds-project h3{margin-top:16px;font-size:30px;line-height:36px;letter-spacing:-.03em;font-weight:600}.ds-project-copy{margin-top:16px!important;font-size:16px;line-height:24px;color:var(--muted,#b0b0a8)}.ds-project-role{margin-top:16px!important;font-size:14px;line-height:20px;color:var(--muted,#b0b0a8)}.ds-project-role strong{margin-right:8px;color:var(--text,#f3f3ee);font-weight:600}@media(max-width:600px){.ds-project{padding:24px}.ds-project h3{font-size:24px;line-height:32px}}"
+    },
+    {
+      "name": "Native project disclosure",
+      "kind": "custom",
+      "refersTo": "project-details",
+      "description": "Native expandable technical detail with a sage plus/minus symbol.",
+      "html": "<details class=\"ds-details\"><summary>Inside the build<span class=\"ds-details-symbol\" aria-hidden=\"true\"></span></summary><div class=\"ds-details-body\"><p>SwiftUI provides the native interface, while Firebase supports sign in and realtime state synchronization across devices.</p></div></details>",
+      "css": ".ds-details{font-family:var(--font,Manrope,system-ui,sans-serif);max-width:520px;color:var(--text,#f3f3ee)}.ds-details summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:48px;list-style:none;cursor:pointer;font-size:14px;line-height:20px;font-weight:600}.ds-details summary::-webkit-details-marker{display:none}.ds-details-symbol{position:relative;width:16px;height:16px;flex:none;color:var(--accent,#b7c5a3)}.ds-details-symbol::before,.ds-details-symbol::after{content:\"\";position:absolute;background:currentColor;top:7px;left:2px;width:12px;height:1px;transition:transform 180ms var(--ease,cubic-bezier(.32,.72,0,1))}.ds-details-symbol::after{transform:rotate(90deg)}.ds-details[open] .ds-details-symbol::after{transform:rotate(0)}.ds-details-body{padding-top:8px;color:var(--muted,#b0b0a8);font-size:14px;line-height:20px}.ds-details-body p{margin:0}@media(hover:hover) and (pointer:fine){.ds-details summary:hover{color:var(--accent,#b7c5a3)}}.ds-details summary:active{color:var(--accent,#b7c5a3)}.ds-details summary:focus-visible{outline:2px solid var(--accent,#b7c5a3);outline-offset:4px;border-radius:4px}@media(prefers-reduced-motion:reduce){.ds-details-symbol::before,.ds-details-symbol::after{transition:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Software Workbench",
+    "overview": "This phrase describes the implemented portfolio: a quiet, practical setting for real software work. The retained black and dark neutral surfaces, warm light text, and muted sage accent give the site a measured, technical character. Manrope carries every text role, and the contrast between large headings and compact project metadata creates hierarchy without visual noise.\n\nThe interface is spacious around major sections and denser within project evidence. Screenshots supply the visual specificity; borders, restrained corners, and tonal layers organize them. The workbench metaphor records the existing refinement rather than introducing a replacement visual identity. Keep the static HTML, CSS, and JavaScript system straightforward to maintain on GitHub Pages.",
+    "keyCharacteristics": [
+      "Dark neutral surfaces with a single muted sage accent.",
+      "Real project screenshots as the primary visual evidence.",
+      "Large, tightly tracked headings paired with readable, compact detail.",
+      "Flat, bordered panels and modest corner radii.",
+      "Native disclosures, visible keyboard focus, and optional motion."
+    ],
+    "rules": [
+      {
+        "name": "The Single Accent Rule",
+        "body": "Use sage for intentional emphasis and interaction; let the neutral surfaces carry the composition.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Typeface Rule",
+        "body": "Use the local Manrope family throughout; establish hierarchy through size, weight, spacing, and contrast.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tonal Depth Rule",
+        "body": "Separate regions with the established neutral surfaces and borders; keep their resting appearance flat.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Optional Motion Rule",
+        "body": "Content is visible at rest. Reduced motion disables transitions and smooth scrolling; interaction states remain legible without animation. The shared easing is `cubic-bezier(.32,.72,0,1)`.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do preserve the dark neutral and sage identity when extending the site.",
+      "Do use the local Manrope family and the established text hierarchy.",
+      "Do use real project screenshots with meaningful alternative text and captions.",
+      "Do keep full phone captures intact in the iOS gallery.",
+      "Do retain visible keyboard focus, native disclosures, and visible navigation without JavaScript.",
+      "Do keep content readable when motion is reduced and at widths of 320px and above."
+    ],
+    "donts": [
+      "Don't replace factual screenshots with invented product interfaces.",
+      "Don't communicate important information only through hover or animation.",
+      "Don't give noninteractive technology tags button or filter behavior.",
+      "Don't add competing accent colors, ornamental shadows, or blurred surfaces to this established visual system.",
+      "Don't crop the full iOS app limit capture in the project gallery."
+    ]
+  }
+}
