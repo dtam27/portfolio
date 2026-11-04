@@ -1,0 +1,59 @@
+:root {
+  --code-font: ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+.coursework-main { padding-block: 80px 96px; min-height: calc(100svh - 176px); }
+.coursework-intro { max-width: 680px; }
+.coursework-intro h1 { font-size: 48px; line-height: 1; letter-spacing: -.04em; font-weight: 600; }
+.coursework-intro > p { margin-top: 24px; color: var(--muted); font-size: 18px; line-height: 28px; }
+.coursework-gate { max-width: 520px; margin-top: 48px; }
+.coursework-unlock > label { display: block; margin-bottom: 8px; font-weight: 600; }
+.coursework-password-row { display: flex; align-items: stretch; gap: 8px; }
+.coursework-password-row input { min-width: 0; width: 100%; min-height: 48px; padding: 12px; color: var(--text); background: var(--surface); border: 1px solid var(--muted); border-radius: 4px; font: inherit; caret-color: var(--accent); }
+.coursework-password-row input:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.coursework-show, .coursework-lock, .coursework-download { min-height: 48px; padding: 8px 16px; background: var(--surface); border: 1px solid var(--muted); border-radius: 4px; cursor: pointer; font-size: 14px; line-height: 24px; font-weight: 600; }
+.coursework-show { min-width: 72px; }
+.coursework-error { min-height: 24px; margin-block: 8px 16px; font-size: 14px; line-height: 24px; }
+.coursework-unlock .button-primary { margin-top: 0; cursor: pointer; }
+.coursework-unlock button:disabled { cursor: wait; opacity: .6; transform: none; }
+.coursework-access { margin-top: 24px; color: var(--muted); font-size: 14px; }
+.coursework-access .text-link { font-size: inherit; }
+.coursework-status { margin-top: 24px; color: var(--muted); }
+.coursework-status:empty { margin: 0; }
+.coursework-toolbar { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 24px; margin-top: 48px; }
+#coursework-index { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+#coursework-index a { display: inline-flex; align-items: center; min-height: 48px; color: var(--accent); font-size: 14px; font-weight: 600; text-decoration: underline; }
+.coursework-course { padding-top: 64px; scroll-margin-top: 104px; }
+.coursework-course + .coursework-course { margin-top: 64px; border-top: 1px solid var(--line); }
+.coursework-course h2 { max-width: 900px; font-size: 30px; line-height: 36px; font-weight: 600; letter-spacing: -.03em; }
+.coursework-course h2 span { display: block; margin-top: 8px; color: var(--muted); font-size: 18px; line-height: 28px; letter-spacing: 0; font-weight: 400; }
+.coursework-course > p { max-width: 65ch; margin-top: 16px; color: var(--muted); }
+.coursework-project { margin-top: 40px; max-width: 900px; }
+.coursework-project + .coursework-project { margin-top: 48px; }
+.coursework-project h3 { font-size: 24px; line-height: 32px; font-weight: 600; letter-spacing: -.02em; }
+.coursework-project > p { max-width: 65ch; margin-top: 12px; color: var(--muted); }
+.coursework-project ul { margin: 16px 0 0; padding-left: 24px; color: var(--muted); max-width: 70ch; }
+.coursework-project > ul:not(.tags) { list-style: disc; }
+.coursework-project li + li { margin-top: 8px; }
+.coursework-project .tags { margin-top: 16px; padding-left: 0; }
+.coursework-project .tags li + li { margin-top: 0; }
+.coursework-files { margin-top: 24px; }
+.coursework-file + .coursework-file { border-top: 1px solid var(--line); }
+.coursework-file summary { overflow-wrap: anywhere; font-size: 14px; }
+.coursework-file pre { margin: 8px 0 16px; padding: 16px; max-height: 520px; overflow: auto; background: var(--surface); border-radius: 8px; font-family: var(--code-font); font-size: 14px; line-height: 24px; tab-size: 2; }
+.coursework-file pre:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.coursework-download { display: inline-flex; align-items: center; margin-bottom: 24px; }
+.coursework-note { max-width: 70ch; margin-top: 64px; color: var(--muted); font-size: 14px; line-height: 24px; }
+@media (hover: hover) and (pointer: fine) {
+  .coursework-show:hover, .coursework-lock:hover, .coursework-download:hover { background: var(--surface-hover); color: var(--accent); }
+}
+@media (max-width: 600px) {
+  .coursework-main { padding-block: 48px 64px; }
+  .coursework-intro h1 { font-size: 36px; line-height: 40px; }
+  .coursework-intro > p { font-size: 16px; line-height: 24px; }
+  .coursework-gate, .coursework-toolbar { margin-top: 32px; }
+  .coursework-course { padding-top: 40px; }
+  .coursework-course + .coursework-course { margin-top: 40px; }
+  .coursework-course h2 { font-size: 24px; line-height: 32px; }
+  .coursework-project h3 { font-size: 20px; line-height: 28px; }
+  .coursework-back { font-size: 12px; }
+}

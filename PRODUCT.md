@@ -24,6 +24,8 @@ The portfolio is an existing static HTML, CSS, and JavaScript website hosted thr
 
 Use direct headings and plain language. The hero identifies Daniel by name; About me, Technical skills, and Contact label their sections. The user removed the earlier slogans.
 
+The user requested a password protected university coursework section and authorized selecting material from their private coursework repository. Keep selected writeups and source files inside the encrypted bundle; never duplicate protected material in public HTML, documentation, or plain assets. A separate coursework page links from primary navigation and About. The original repository stays private.
+
 ## Capabilities and Constraints
 
 - Preserve Daniel's identity and factual project, education, and experience content while improving presentation for SWE internship recruiting.
@@ -59,3 +61,4 @@ Use direct headings and plain language. The hero identifies Daniel by name; Abou
 3. Keep claims proportional to the evidence and distinguish community or organizational reach from active software usage.
 4. Keep the résumé and contact paths clear and functional.
 5. Preserve the simple static website so Daniel can maintain and publish it through GitHub Pages.
+6. Protect coursework with authenticated encryption and a strong separately shared password. Keep plaintext input and the password outside the public repository. The browser keeps no persistent unlocked session, and Lock coursework clears decrypted views and source links.

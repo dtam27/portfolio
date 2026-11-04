@@ -2,3 +2,6 @@
 .DS_Store
 
 .hallmark/
+coursework-private/
+coursework/*password*
+coursework/*.private.json
