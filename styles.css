@@ -1398,3 +1398,13 @@ details[open]>summary .details-symbol::after {
 @media (max-width: 600px) {
   .desktop-shot { padding: 24px; }
 }
+
+.coursework-summary {
+  max-width: 65ch;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 28px;
+}
+@media (max-width: 600px) {
+  .coursework-summary { font-size: 16px; line-height: 24px; }
+}

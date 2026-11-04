@@ -22,7 +22,7 @@ Open http://localhost:8080/. Stop the server with Ctrl+C.
 4. Technical skills: grouped mobile, backend, data, and security capabilities.
 5. Contact: email, phone, professional links, and the current PDF résumé.
 
-The navigation and About section also link to `coursework/`, a password protected selection of university projects with source viewers and downloads.
+A Coursework section appears between Selected work and About while scrolling. Its button opens `coursework/`, a password protected selection of university projects with source viewers and downloads. The navigation links to the homepage section; About also links directly to the protected page.
 
 The page uses a self-hosted Manrope font and user-supplied screenshots. Group Think displays a shared focus session and the full iOS app limit capture. Touch by Touch displays bout scoring and school statistics using the same gallery pattern. Résumé links open `assets/resume.pdf` directly. The older DOCX remains a legacy asset and is not linked.
 

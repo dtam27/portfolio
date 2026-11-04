@@ -24,7 +24,7 @@ The portfolio is an existing static HTML, CSS, and JavaScript website hosted thr
 
 Use direct headings and plain language. The hero identifies Daniel by name; About me, Technical skills, and Contact label their sections. The user removed the earlier slogans.
 
-The user requested a password protected university coursework section and authorized selecting material from their private coursework repository. Keep selected writeups and source files inside the encrypted bundle; never duplicate protected material in public HTML, documentation, or plain assets. A separate coursework page links from primary navigation and About. The original repository stays private.
+The user requested a password protected university coursework section and authorized selecting material from their private coursework repository. Keep selected writeups and source files inside the encrypted bundle; never duplicate protected material in public HTML, documentation, or plain assets. A short homepage Coursework section appears between Selected work and About, with an action to open the protected page. Primary navigation scrolls to that section; About also links directly to the protected page. The original repository stays private.
 
 ## Capabilities and Constraints
 
