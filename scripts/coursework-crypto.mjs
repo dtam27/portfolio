@@ -25,8 +25,8 @@ function cryptoAPI() {
 }
 
 function validatePassword(password) {
-  if (typeof password !== "string" || password.length < 16 || password.length > 1024) {
-    throw new CourseworkCryptoError("INVALID_PASSWORD", "Use a password between 16 and 1024 characters.");
+  if (typeof password !== "string" || password.length < 1 || password.length > 1024) {
+    throw new CourseworkCryptoError("INVALID_PASSWORD", "Use a nonempty password of at most 1024 characters.");
   }
 }
 

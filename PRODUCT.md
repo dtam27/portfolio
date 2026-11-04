@@ -61,4 +61,4 @@ The user requested a password protected university coursework section and author
 3. Keep claims proportional to the evidence and distinguish community or organizational reach from active software usage.
 4. Keep the résumé and contact paths clear and functional.
 5. Preserve the simple static website so Daniel can maintain and publish it through GitHub Pages.
-6. Protect coursework with authenticated encryption and a strong separately shared password. Keep plaintext input and the password outside the public repository. The browser keeps no persistent unlocked session, and Lock coursework clears decrypted views and source links.
+6. Protect coursework with authenticated encryption and a separately shared password. Daniel requested support for his own shorter password; generated passwords remain strong by default. Keep plaintext input and the password outside the public repository. The browser keeps no persistent unlocked session, and Lock coursework clears decrypted views and source links.

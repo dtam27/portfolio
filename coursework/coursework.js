@@ -1,4 +1,4 @@
-import { decryptBundle } from "../scripts/coursework-crypto.mjs?v=0426c83403e4";
+import { decryptBundle } from "../scripts/coursework-crypto.mjs?v=aeea10aaf68b";
 
 import { validateCourseworkPayload } from "../scripts/coursework-schema.mjs?v=63c42961ca7f";
 
@@ -138,7 +138,7 @@ form.addEventListener("submit", async (event) => {
   status.textContent = "Unlocking coursework…";
   let phase = "fetch";
   try {
-    const response = await fetch(new URL("bundle.json?v=b841cf865dc3", import.meta.url), { cache: "no-store", signal: request.signal });
+    const response = await fetch(new URL("bundle.json?v=cfae4d1e373c", import.meta.url), { cache: "no-store", signal: request.signal });
     if (!response.ok) throw new Error("Unavailable");
     const raw = await response.text();
     if (raw.length > 12000000) throw new Error("Invalid bundle");

@@ -64,7 +64,7 @@ node scripts/version-coursework.mjs
 node --test tests/coursework-crypto.test.mjs
 ```
 
-The builder generates a strong password if the specified password file does not exist. Share it separately with intended reviewers. This is password-based encryption on static hosting, with no individual accounts or server-side rate limiting. Anyone with the password can retain decrypted copies; re-encrypting with a new password does not revoke copies already downloaded.
+The builder accepts a user chosen password of 1 to 1024 characters, or generates a strong password if the specified password file does not exist. Shorter passwords are easier to guess offline. Share it separately with intended reviewers. This is password-based encryption on static hosting, with no individual accounts or server-side rate limiting. Anyone with the password can retain decrypted copies; re-encrypting with a new password does not revoke copies already downloaded.
 
 ## Verification status
 
@@ -72,6 +72,6 @@ The latest CUA browser inspection covered 320, 375, 640, 768, 1024, 1280, 1440, 
 
 The earlier public-page Hallmark static check using the kept-rule policy reported 0 FAIL and 0 REFLEX findings. Its scoped waivers retained the documented dark brand surface and navigation treatment. Hallmark's Puppeteer browser-renderer check was unavailable. Independent Hallmark review returned ship with no material finish findings within the reviewed polish scope.
 
-The coursework feature adds eight passing crypto and build tests, plus browser checks for rejected passwords, source fidelity, clearing content and download links on lock, returning to the password screen on reload, mobile navigation, and reflow at 320, 375, 768, and 1280 CSS pixels.
+The coursework feature adds nine passing crypto and build tests, plus browser checks for rejected passwords, source fidelity, clearing content and download links on lock, returning to the password screen on reload, mobile navigation, and reflow at 320, 375, 768, and 1280 CSS pixels.
 
 Physical-phone touch behavior, a real screen reader walkthrough, and browser text zoom remain unverified. The bundled mobile checklist supports device review. No Lighthouse score is claimed.

@@ -57,6 +57,16 @@ test("encrypted round trip preserves Unicode and literal source text without exp
   assert.ok(!JSON.stringify(envelope).includes("<script>"));
 });
 
+test("user chosen short passwords work while empty and oversized passwords are rejected", async () => {
+  const shortPassword = crypto.randomUUID().slice(0, 8);
+  const envelope = await encryptBundle(payload, shortPassword);
+  assert.deepEqual(await decryptBundle(envelope, shortPassword), payload);
+  await assert.rejects(decryptBundle(envelope, `${shortPassword}!`), { code: "UNLOCK_FAILED" });
+  for (const invalid of ["", "x".repeat(1025)]) {
+    await assert.rejects(encryptBundle(payload, invalid), { code: "INVALID_PASSWORD" });
+  }
+});
+
 test("wrong password and altered authenticated data cannot decrypt", async () => {
   const envelope = await encryptBundle(payload, password);
   await assert.rejects(decryptBundle(envelope, "a-different-long-test-password"), { code: "UNLOCK_FAILED" });
@@ -94,7 +104,6 @@ test("malformed or excessive envelopes fail validation before key derivation", a
   for (const value of invalid) {
     await assert.rejects(decryptBundle(value, password), { code: "INVALID_BUNDLE" });
   }
-  await assert.rejects(encryptBundle(payload, "short"), { code: "INVALID_PASSWORD" });
   await assert.rejects(encryptBundle(undefined, password), { code: "INVALID_PAYLOAD" });
 });
 
